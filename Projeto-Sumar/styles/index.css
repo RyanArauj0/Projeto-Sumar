@@ -1,0 +1,653 @@
+/* ===================== ESTILO GERAL ===================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(207, 206, 206, 0.863);
+    color: black;
+    transition: 0.3s ease-in-out;
+
+    .topo-do-site .txt-topo-do-site p {
+        background-color: #18181848;
+    }
+
+    footer {
+        padding: 60px 4%;
+        box-shadow: 0px 0px 40px 10px #0e0d0d2f;
+    
+    }
+}
+
+/* ===================== Modo escuro ===================== */
+.dark-mode {
+    background-color: black;
+    color: white;
+
+    .topo-do-site .txt-topo-do-site p {
+        background-color: #f5f5f548;
+    }
+
+    footer {
+        padding: 60px 4%;
+        box-shadow: 0px 0px 40px 10px #ffffff10;
+    
+    }
+}
+
+/* Botão de alternância */
+#modo-toggle {
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    padding: 5px 5px;
+    background: #00ff6a;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.btn-contato {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff6a;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===================== Efeito o reflexo =====================*/
+.btn-contato button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-45deg);
+    animation: reflexo 3s infinite linear;
+}
+
+/* Animação do reflexo */
+@keyframes reflexo {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.logo1 {
+    height: 70px;
+    width: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================== ESTILO DO HEADER ===================== */
+
+header {
+    padding: 10px 4%;
+    background-color: #000000;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.interface h1 {
+    color: white;
+}
+
+header a {
+    font-family: 'Times New Roman', Times, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    display: inline-block;
+    transition: .05s;
+    font-size: 15px;
+}
+
+header li a:hover {
+    color: #7c7c7c;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.btn-contato button:hover {
+    color: #fff;
+    border-radius: 0px;
+}
+
+.menu-desktop a {
+    position: relative;
+    text-decoration: none;
+    color: #7c7c7c;
+    padding-bottom: 5px;
+}
+
+.menu-desktop a.ativo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #00ff6a; /* Cor da linha */
+    transition: 0.3s ease-in-out;
+}
+
+/* ===================== ESTILO DO MENU MOBILE =====================*/
+
+.menu-mobile {
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    
+}
+
+.abrir-menu{
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile.fechando-menu {
+    width: 0%;
+    transition: .2s;
+}
+
+.overlay-menu {
+    background-color: #00000096;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.abrir-menu i {
+    display: inline-block;
+    color:#00ff6a;
+    font-size: 40px;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: #00ff6a;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+    font-weight: bolder;
+}
+
+.menu-mobile nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ou center, dependendo do que deseja */
+    padding: 0;
+}
+
+.menu-mobile nav ul li {
+    width: 100%; /* Para ocupar toda a largura do menu */
+    text-align: right; /* Para alinhar o texto à esquerda */
+    padding: 10px 0; /* Espaçamento entre os itens */
+}
+
+/* ===================== ESTILO DO TOPO DO SITE ===================== */
+
+.topo-do-site {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 20px;
+}
+
+.topo-do-site .txt-topo-do-site p {
+    font-family: 'Times New Roman', Times, sans-serif;
+    display: flex;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: justify;
+    background-color: #f5f5f548;
+    padding: 40px;
+    width: 100%;
+    height: 400px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* ===================== SLIDES - INICIO ===================== */
+
+.slider {
+    width: 51%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.slider-content {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide-box {
+    min-width: 100%;
+}
+
+.slide-box {
+    width: 101%;
+    height: 400px;
+    
+}
+
+#carro1-inicio {
+    background-image: url('../assets/carro-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro2-inicio {
+    background-image: url('../assets/carro-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro3-inicio {
+    background-image: url('../assets/carro-3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.nav-buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.nav-buttons button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ===================== MARCAS - INICIO ===================== */
+
+.marcas {
+    width: 70%;
+    height: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.marca {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.marca img {
+    width: 90px;
+    height: 60px;
+}
+
+#marca1 img {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+#marca5 img {
+    width: 100px;
+    height: 60px;
+    margin-left: -20px;
+}
+
+#marca6 img {
+    width: 100px;
+    height: 60px;
+    margin-left: -20px;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00ff6a;
+}
+
+footer .line-footer p {
+    color: #00ff6a;
+}
+
+footer .line-footer p i {
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ===================== ICONES ===================== */
+
+i {
+    font-size: 20px;
+    color: #000000;
+}
+
+#icon-email i {
+    font-size: 20px;
+    color: #00ff6a;
+}
+
+button {
+    background-color: #00ff6a;
+    padding: 15px;
+    border-radius: 8rem;
+    border: none;
+    display: inline-block;
+    gap: 30px;
+}
+
+.btn-social button:hover {
+    color: #fff;
+    box-shadow: 0px 0px 10px #00ff6a;
+    transform: scale(1.05);
+    transition: .07s;
+}
+
+.verde {
+    color: #00ff6a;
+}
+/* ===================== RESPONSIVIDADE ===================== */
+
+@media (max-width: 600px) {
+    .slider {
+        width: 350px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .marcas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+    }
+
+    footer {
+        margin-top: 300px;
+    }
+
+    header a {
+        display: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        padding: 10px 1%;
+        background-color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .abrir-menu{
+        display: block;
+    }
+
+    #modo-toggle {
+        position: relative;
+        top: -2px;
+        right: 80px;
+    }
+
+    #marca5 img {
+        width: 100px;
+        height: 60px;
+        margin-left: -9px;
+    }
+    
+    #marca6 img {
+        width: 100px;
+        height: 60px;
+        margin-left: -10px;
+    }
+
+    .topo-do-site {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        font-size: 20px;
+    }
+    
+    .topo-do-site .txt-topo-do-site p {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-align: justify;
+        padding: 40px;
+        width: 100%;
+        height: 400px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        line-height: 30px;
+    }
+
+    .menu-mobile #li-contato {
+        color: #00ff6a;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: #00ff6a;
+        color: #000;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu-mobile #li-contato:hover {
+        color: #000000;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider {
+        width: 350px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    footer {
+        margin-top: 300px;
+    }
+
+    header a {
+        color: #00ff6a;
+    }
+
+    header {
+        padding: 10px 1%;
+        background-color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: #ff0000;
+    }
+
+    header > .interface {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    #modo-toggle {
+        position: relative;
+        top: -2px;
+        right: 80px;
+    }
+
+    #marca5 img {
+        width: 100px;
+        height: 60px;
+        margin-left: -9px;
+    }
+    
+    #marca6 img {
+        width: 100px;
+        height: 60px;
+        margin-left: -10px;
+    }
+
+    .topo-do-site {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        font-size: 20px;
+    }
+    
+    .topo-do-site .txt-topo-do-site p {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-align: justify;
+        padding: 40px;
+        width: 100%;
+        height: 400px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        line-height: 30px;
+    }
+
+}

@@ -1,0 +1,243 @@
+/* ===================== ESTILO GERAL ===================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: black;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FFFF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.logo1 {
+    height: 70px;
+    width: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================== ESTILO DO HEADER ===================== */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7c7c7c;
+    text-decoration: none;
+    text-transform: none;
+    display: inline-block;
+    transition: .05s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav.menu-desktop ul li {
+    padding: 0px 60px;
+    font-size: 20px;
+}
+
+.btn-contato button:hover {
+    color: #fff;
+    box-shadow: 0px 0px 10px #00FFFF;
+    transform: scale(1.05);
+    transition: .05s;
+}
+
+/* ===================== ESTILO DO TOPO DO SITE ===================== */
+
+.topo-do-site {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 20px;
+}
+
+.topo-do-site .txt-topo-do-site p {
+    color: #fff;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-align: justify;
+}
+
+/* ===================== SLIDES - INICIO ===================== */
+
+.slide-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    margin: 0px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .05s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+/* ===================== SLIDES - MARCAS ===================== */
+
+/* ===================== MARCAS - INICIO ===================== */
+
+.marcas {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 300px;
+    overflow-x: auto;  /* Permite rolagem horizontal */
+    white-space: wrap; /* Impede que os itens quebrem linha */
+    gap: 20px;
+    padding: 20px;
+    scrollbar-width: none; /* Remove scrollbar no Firefox */
+    -ms-overflow-style: none; /* Remove scrollbar no IE */
+}
+
+.marcas::-webkit-scrollbar {
+    display: none; /* Remove scrollbar no Chrome e Edge */
+}
+
+.marca {
+    flex: 0 0 auto;
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    flex-direction: row;
+    
+}
+
+.marca img {
+    width: 100%;
+    display: block;
+}
+
+/* Animação de rolagem */
+@keyframes slideMarcas {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    margin-top: 300px;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00ff6a;
+}
+
+footer .line-footer p {
+    color: #00ff6a;
+}
+
+footer .line-footer p i {
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+}
