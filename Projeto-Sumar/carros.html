@@ -61,7 +61,10 @@
 </header><!-- fim do header -->
 
 <main>
-    <section class="marcas"><!-- Marcas -->
+
+    
+
+    <section class="marcas"> <!-- Marcas -->
 
         <div class="marca" id="marca1">
             <a href="https://www.audi.com.br/pt/" target="_blank" rel="noopener noreferrer"><img src="assets/logo-carro1.png" alt="Marca do carro"></a>
@@ -97,19 +100,289 @@
             </div>
         </div>
 
-    </section> <!-- fim do header -->
+    </section> <!-- Fim Marcas -->
 
-    <section class="carros">
-        <div class="carro" id="carro1">
-            <img src="assets/carro1-sumar.jpeg" alt="">
-            <div class="desc"></div>
-            <div class="saiba-mais">
-                <button id="btn-valor">R$100.000,00</button>
-            </div>
-        </div>
+    <!--Filtro-->
+
+    <section class="filtro">
+        <label for="pesquisa">Pesquisar por nome:</label>
+        <input type="text" id="pesquisa" placeholder="Digite o nome do carro..." oninput="filtrarCarros()">
+
+        <label for="marca">Marca:</label>
+        <select id="marca">
+            <option value="">Todas</option>
+            <option value="audi">Audi</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="ford">Ford</option>
+            <option value="jaguar">Jaguar</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="chevrolet">Chevrolet</option>
+        </select>
+    
+        <label for="preco">Preço máximo:</label>
+        <input type="range" id="preco" min="50000" max="300000" step="5000" value="300000" oninput="atualizarPreco(this.value)">
+        <span id="preco-valor">R$ 300.000</span>
+    
         
     </section>
+    
+    <section class="carros" id="lista-carros">
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
 
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="parati">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Fora de estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Fora de estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="ford">
+            <div class="aviso"><span>Fora de estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">ford</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
+            <div class="aviso"><span>Em estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">FORD MUSTANG</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+
+        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste2">
+            <div class="aviso"><span>Fora de estoque</span></div>
+            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
+            <div class="nome">teste2</div>
+
+            <div class="desc">
+                <ul>
+                    <li id="teste1">Cambio: <span>Automático</span></li><br>
+                    <li>Chave reserva: </li><br>
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div>
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+
+        </div>
+        <!-- Adicione mais carros com data-marca, data-preco e data-nome -->
+    </section>
+
+    <!--Fim filtro-->
+    
 </main>
 
 

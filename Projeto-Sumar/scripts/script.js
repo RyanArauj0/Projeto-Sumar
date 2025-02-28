@@ -77,3 +77,44 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("link-carros").classList.add("ativo");
     }
 });
+
+/* ================================ FILTRO ================================ */
+
+function filtrarCarros() {
+    let marcaSelecionada = document.getElementById('marca').value;
+    let precoMaximo = document.getElementById('preco').value;
+    let pesquisaNome = document.getElementById('pesquisa').value.toLowerCase();
+    let carros = document.querySelectorAll('.carro');
+
+    carros.forEach(carro => {
+        let marca = carro.getAttribute('data-marca');
+        let preco = parseInt(carro.getAttribute('data-preco'));
+        let nome = carro.getAttribute('data-nome').toLowerCase();
+
+        if ((marcaSelecionada === '' || marcaSelecionada === marca) &&
+            preco <= precoMaximo &&
+            nome.includes(pesquisaNome)) {
+            carro.style.visibility = 'visible'; // Mantém o espaço
+        } else {
+            carro.style.visibility = 'hidden'; // Oculta, mas mantém o espaço
+        }
+    });
+}
+
+/* ================================ AVISO DE ESTOQUE ================================ */
+
+document.getElementById('marca').addEventListener('change', filtrarCarros);
+document.getElementById('preco').addEventListener('input', filtrarCarros);
+document.getElementById('pesquisa').addEventListener('input', filtrarCarros);
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".aviso").forEach(aviso => {
+        if (aviso.textContent.trim().toLowerCase() === "em estoque") {
+            aviso.style.backgroundColor = "green";
+            aviso.style.color = "white"; // Deixa o texto mais visível
+        } else if (aviso.textContent.trim().toLowerCase() === "fora de estoque") {
+            aviso.style.backgroundColor = "red";
+            aviso.style.color = "white";
+        }
+    });
+});
