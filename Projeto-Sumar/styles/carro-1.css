@@ -41,10 +41,6 @@ body {
     background-color: black;
     color: white;
 
-    .topo-do-site .txt-topo-do-site p {
-        background-color: #f5f5f548;
-    }
-
     footer {
         padding: 60px 4%;
         box-shadow: 0px 0px 40px 10px #ffffff10;
@@ -58,7 +54,7 @@ body {
     top: 16px;
     right: 10px;
     padding: 5px 5px;
-    background: #00ff6a;
+    background: #4BB446;
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -75,7 +71,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00ff6a;
+    background: radial-gradient(circle at top left, #a8ff78, #087f23);
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -553,6 +549,7 @@ button {
 
     .abrir-menu{
         display: block;
+        margin-left: 250px;
     }
 
     #modo-toggle {

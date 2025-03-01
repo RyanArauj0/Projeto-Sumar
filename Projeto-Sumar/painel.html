@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração</title>
+    <link rel="stylesheet" href="styles/painel.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <h1>Painel de Administração</h1>
+        
+        <div class="add-car">
+            <h2>Adicionar Carro</h2>
+            <form id="addCarForm">
+                <input type="text" id="carName" placeholder="Nome do Carro" required>
+                <input type="url" id="carImage" placeholder="URL da Imagem" required>
+                <textarea id="carDescription" placeholder="Descrição" required></textarea>
+                <label>
+                    Em estoque:
+                    <input type="checkbox" id="carInStock">
+                </label>
+                <button type="submit">Adicionar Carro</button>
+            </form>
+        </div>
+
+        <div class="car-list">
+            <h2>Carros Cadastrados</h2>
+            <ul id="carList"></ul>
+        </div>
+    </div>
+
+    <script src="painel.js"></script>
+</body>
+</html>

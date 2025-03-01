@@ -18,7 +18,7 @@ let index = 0;
         slides.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    setInterval(nextSlide, 9000); // Troca automática a cada 9s
+    setInterval(nextSlide, 15000); // Troca automática a cada 15s
 
 
 /* ================================ MODO ESCURO/CLARO ================================ */
