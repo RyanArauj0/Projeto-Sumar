@@ -231,7 +231,6 @@ header nav.menu-desktop ul li {
 
 .carros {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 90px;
     justify-content: center;
@@ -247,6 +246,7 @@ header nav.menu-desktop ul li {
     color: #4D5C7B;
     font-weight: bolder;
     background-color: whitesmoke;
+    border-radius: 3px;
 }
 
 .nome {
@@ -269,16 +269,17 @@ header nav.menu-desktop ul li {
     list-style: none;
 }
 
-#teste1 span{
+.sim-nao {
     background-color: rgb(22, 180, 30);
-    border-radius: 15px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 14px;
 }
 
 
 .saiba-mais {
     width: 100%;
-    height: 100vh;
+    height: 90px;
     display: flex;
     flex-direction: row;
     border-top: 1px solid rgba(0, 0, 0, 0.555);
@@ -298,13 +299,15 @@ header nav.menu-desktop ul li {
     border: none;
     padding: 5px;
     width: 100%;
+    height: 7vh;
     cursor: pointer;
-    
+    background-color: rgb(25, 194, 34);
 }
 
-#saiba-mais:hover {
-    background-color: rgb(22, 180, 30);
+#saiba-mais:hover {  
+    background-color: rgb(2, 255, 15);
     transition: 0.2s;
+    color: white;
 }
 
 .btn-valor {
@@ -331,6 +334,11 @@ header nav.menu-desktop ul li {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
 /* ===================== FILTRO ===================== */
 
 .filtro {
@@ -340,7 +348,7 @@ header nav.menu-desktop ul li {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    margin: 200px 0px;
+    margin: 50px 0px;
     justify-content: center;
     align-items: center;
 }
@@ -349,6 +357,11 @@ header nav.menu-desktop ul li {
     border: none;
     padding: 10px 0px;
     border-radius: 10px;
+}
+
+input, select{
+    border: none;
+    outline: none;
 }
 
 /* ===================== ESTILO DO HEADER ===================== */
@@ -609,11 +622,10 @@ i {
 
 @media (max-width: 600px) {
     .slider {
-        width: 350px;
-        height: 300px;
+        width: 150px;
+        height: 100px;
         overflow: hidden;
         position: relative;
-        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -629,7 +641,7 @@ i {
     }
 
     footer {
-        margin-top: 300px;
+        margin-top: 0px;
     }
 
     header a {
@@ -705,4 +717,10 @@ i {
         color: #000000;
         font-weight: bolder;
     }
+
+    .saiba-mais button {
+        height: 6vh;
+    }
+
+    
 }

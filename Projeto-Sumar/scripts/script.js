@@ -1,3 +1,5 @@
+/* ================================ SLIDES ================================ */
+
 let index = 0;
     const slides = document.querySelector(".slider-content");
     const totalSlides = document.querySelectorAll(".slide-box").length;
@@ -16,9 +18,10 @@ let index = 0;
         slides.style.transform = `translateX(-${index * 100}%)`;
     }
 
-    setInterval(nextSlide, 6000); // Troca automática a cada 6s
+    setInterval(nextSlide, 9000); // Troca automática a cada 9s
 
 
+/* ================================ MODO ESCURO/CLARO ================================ */
 
 const botao = document.getElementById("modo-toggle");
 const body = document.body;
@@ -94,18 +97,15 @@ function filtrarCarros() {
         if ((marcaSelecionada === '' || marcaSelecionada === marca) &&
             preco <= precoMaximo &&
             nome.includes(pesquisaNome)) {
-            carro.style.visibility = 'visible'; // Mantém o espaço
+            carro.style.display = 'flex'; // Exibe os elementos que correspondem ao filtro
         } else {
-            carro.style.visibility = 'hidden'; // Oculta, mas mantém o espaço
+            carro.style.display = 'none'; // Remove os elementos que não correspondem ao filtro
         }
     });
 }
 
-/* ================================ AVISO DE ESTOQUE ================================ */
 
-document.getElementById('marca').addEventListener('change', filtrarCarros);
-document.getElementById('preco').addEventListener('input', filtrarCarros);
-document.getElementById('pesquisa').addEventListener('input', filtrarCarros);
+/* ================================ AVISO DE ESTOQUE ================================ */
 
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".aviso").forEach(aviso => {
@@ -118,3 +118,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+/* ================================ CHAVE RESERVA =================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".sim-nao").forEach(aviso => {
+        if (aviso.textContent.trim().toLowerCase() === "sim") {
+            aviso.style.backgroundColor = "green";
+            aviso.style.color = "white"; // Deixa o texto mais visível
+        } else if (aviso.textContent.trim().toLowerCase() === "não") {
+            aviso.style.backgroundColor = "red";
+            aviso.style.color = "white";
+        }
+    });
+});
+

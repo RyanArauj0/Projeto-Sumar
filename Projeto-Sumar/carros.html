@@ -106,7 +106,7 @@
 
     <section class="filtro">
         <label for="pesquisa">Pesquisar por nome:</label>
-        <input type="text" id="pesquisa" placeholder="Digite o nome do carro..." oninput="filtrarCarros()">
+        <input type="text" id="pesquisa" placeholder="Digite o nome do carro..." oninput="filtrarCarros()" autocomplete="off">
 
         <label for="marca">Marca:</label>
         <select id="marca">
@@ -127,258 +127,366 @@
     </section>
     
     <section class="carros" id="lista-carros">
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
 
-            <div class="desc">
+        <!-- =============================================== Carro 1 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="1" data-preco="50000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Não</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
-                <button id="saiba-mais">SAIBA MAIS</button>
+                <div class="btn-valor">R$50.000</div> <!-- Preço -->
+                <a href="carro-1.html" target="" rel="noopener noreferrer"><button id="saiba-mais" data-id="1">SAIBA MAIS</button></a>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="parati">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 2 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
-                <button id="saiba-mais">SAIBA MAIS</button>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
+                <a href="carro-1.html" target="" rel="noopener noreferrer"><button id="saiba-mais" data-id="1">SAIBA MAIS</button></a>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Fora de estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 3 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Fora de estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Fora de estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 4 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 5 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="MERCEDES" data-preco="100000" data-nome="MERCEDES">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">MERCEDES</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 6 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 7 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Não</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 8 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Fora de estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 9 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="ford">
-            <div class="aviso"><span>Fora de estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">ford</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 10 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste">
-            <div class="aviso"><span>Em estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">FORD MUSTANG</div>
+        <!-- ================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 11 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Fora de estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
 
-        <div class="carro" data-marca="audi" data-preco="100000" data-nome="teste2">
-            <div class="aviso"><span>Fora de estoque</span></div>
-            <img src="assets/carro1-sumar.jpeg" alt="Audi A4">
-            <div class="nome">teste2</div>
+        <!-- =================================================================================================================== -->
 
-            <div class="desc">
+        <!-- =============================================== Carro 12 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li id="teste1">Cambio: <span>Automático</span></li><br>
-                    <li>Chave reserva: </li><br>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                     <li>Ano: </li><br>
                     <li>Combustível:</li><br>
                     <li>Km:</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$100.000,00</div>
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
                 <button id="saiba-mais">SAIBA MAIS</button>
             </div>
-
         </div>
-        <!-- Adicione mais carros com data-marca, data-preco e data-nome -->
+
+        <!-- =================================================================================================================== -->
+
+        <!-- =============================================== Carro 13 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+        </div>
+
+        <!-- =================================================================================================================== -->
+
+        <!-- =============================================== Carro 14 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+        </div>
+
+        <!-- =================================================================================================================== -->
+
+        <!-- =============================================== Carro 15 ========================================================== -->
+
+        <div class="carro" data-marca="audi" data-id="FORD MUSTANG" data-preco="100000" data-nome="FORD MUSTANG">
+            <div class="aviso"><span>Fora de estoque</span></div> <!-- Estoque -->
+            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Não</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: </li><br>
+                    <li>Combustível:</li><br>
+                    <li>Km:</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$100.000,00</div> <!-- Preço -->
+                <button id="saiba-mais">SAIBA MAIS</button>
+            </div>
+        </div>
+
+        <!-- =================================================================================================================== -->
     </section>
 
     <!--Fim filtro-->
@@ -389,26 +497,26 @@
 
 
 
-    <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                        <img class="logo" src="#" alt="Logo">
-                    </div><!-- fim da logo-footer -->
-                    <div class="btn-social">
-                        <a href="#"><button class="icon-footer"><i class="bi bi-instagram"></i></button></a>
-                         <a href="#" target="_blank"><button class="icon-footer"><i class="bi bi-whatsapp"></i></button></a>
-                        <a href="#"><button class="icon-footer"><i class="bi bi-facebook"></i></button></a>
-                    </div><!-- fim do btn-social -->
-                </div><!-- fim do flex -->
-            </div><!-- fim line-footer -->
-    
-            <div class="line-footer borda" id="icon-email">
-                <p><i class="bi bi-envelope-fill"></i> Desenvolvido por: <a href="mailto:d3v.araujo@gmail.com">Ryan Araújo.</a></p>
-            </div>
+<footer>
+    <div class="interface">
+        <div class="line-footer">
+            <div class="flex">
+                <div class="logo-footer">
+                    <img class="logo" src="#" alt="Logo">
+                </div><!-- fim da logo-footer -->
+                <div class="btn-social">
+                    <a href="#"><button class="icon-footer"><i class="bi bi-instagram"></i></button></a>
+                        <a href="#" target="_blank"><button class="icon-footer"><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="#"><button class="icon-footer"><i class="bi bi-facebook"></i></button></a>
+                </div><!-- fim do btn-social -->
+            </div><!-- fim do flex -->
+        </div><!-- fim line-footer -->
+
+        <div class="line-footer borda" id="icon-email">
+            <p><i class="bi bi-envelope-fill"></i> Desenvolvido por: <a href="mailto:d3v.araujo@gmail.com">Ryan Araújo.</a></p>
         </div>
-    </footer>
+    </div>
+</footer>
 <script src="scripts/script.js"></script>
 </body>
 </html>
