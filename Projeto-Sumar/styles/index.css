@@ -590,27 +590,6 @@ button {
         margin-top: 300px;
     }
 
-    header a {
-        color: #00ff6a;
-    }
-
-    header {
-        padding: 10px 1%;
-        background-color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        color: #ff0000;
-    }
-
-    header > .interface {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-    }
-
     #modo-toggle {
         position: relative;
         top: -1px;
@@ -652,6 +631,48 @@ button {
         border-bottom-left-radius: 50px;
         border-top-right-radius: 50px;
         line-height: 30px;
+    }
+
+    .menu-mobile #li-contato {
+        color: #00ff6a;
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: #00ff6a;
+        color: #000;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .menu-mobile #li-contato:hover {
+        color: #000000;
+        font-weight: bolder;
+    }
+
+    header a {
+        display: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+        padding: 10px 2%;
+        background-color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .abrir-menu{
+        display: block;
+        margin-left: 250px;
+    }
+
+    #modo-toggle {
+        position: relative;
+        top: -1px;
+        right: 70px;
     }
 
 }
