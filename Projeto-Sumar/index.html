@@ -24,7 +24,6 @@
                 <ul>
                     <li><a href="index.html" id="link-inicio">INÍCIO</a></li>
                     <li><a href="carros.html">CARROS</a></li>
-                    <li><a href="#">FINANCIE</a></li>
                     <li><a href="#">VENDA SEU CARRO</a></li>
                 </ul>
             </nav><!--nav-->
@@ -48,8 +47,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">INÍCIO</a></li>
-                        <li><a href="carros.html">CARROS</a></li>                   
-                        <li><a href="#">FINANCIE</a></li>
+                        <li><a href="carros.html">CARROS</a></li>
                         <li><a href="#" id="li-contato">CONTATO</a></li>
                         <li><a href="#">VENDA SEU CARRO</a></li>
                     </ul>
@@ -68,6 +66,12 @@
                 Sapiente fuga rem voluptate laudantium voluptatem atque corporis asperiores, non, sint reprehenderit pariatur, similique minus quas dolorum distinctio beatae tempore aliquid alias.</p>
         </div>
     </section><!-- fim do topo do site -->
+
+    <section class="horario">
+        <h2>Horários de atendimentos</h2>
+        <br>
+        <p id="horario-atendimento">Seg - Sáb: 8hs às 18hs</p>
+    </section>
 
     <section class="slider">
         <div class="slider-content">
@@ -148,5 +152,26 @@
 </footer>
 
 <script src="scripts/script.js"></script>
+
+<!-- ================================ Horario de atendimento =================================== --> 
+
+<script>
+    // Função para verificar o horário e mudar a cor de fundo
+    function verificarHorario() {
+        var p = document.getElementById("horario-atendimento");
+        var agora = new Date();
+        var horaAtual = agora.getHours(); // Pega a hora atual
+
+        // Verifica se está entre 8h e 18h
+        if (horaAtual >= 8 && horaAtual < 18) {
+            p.style.backgroundColor = "green";  // Fundo verde
+        } else {
+            p.style.backgroundColor = "red";  // Fundo vermelho
+        }
+    }
+
+    // Chama a função quando a página for carregada
+    window.onload = verificarHorario;
+</script>
 </body>
 </html>

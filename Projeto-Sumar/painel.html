@@ -11,16 +11,19 @@
         <h1>Painel de Administração</h1>
         
         <div class="add-car">
-            <h2>Adicionar Carro</h2>
-            <form id="addCarForm">
+            <h2>Adicionar ou Editar Carro</h2>
+            <form id="carForm">
+                <input type="hidden" id="carIndex">
                 <input type="text" id="carName" placeholder="Nome do Carro" required>
+                <input type="text" id="carBrand" placeholder="Marca" required>
+                <input type="number" id="carPrice" placeholder="Preço" required>
                 <input type="url" id="carImage" placeholder="URL da Imagem" required>
                 <textarea id="carDescription" placeholder="Descrição" required></textarea>
                 <label>
                     Em estoque:
                     <input type="checkbox" id="carInStock">
                 </label>
-                <button type="submit">Adicionar Carro</button>
+                <button type="submit">Salvar</button>
             </form>
         </div>
 

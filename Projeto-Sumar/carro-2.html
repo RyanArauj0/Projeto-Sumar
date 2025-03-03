@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Estilos-->
-    <link rel="stylesheet" href="styles/carro-1.css">
+    <link rel="stylesheet" href="styles/carro-detalhes.css">
     <!--Fim dos estilos-->
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -24,7 +24,6 @@
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="carros.html">CARROS</a></li>
-                <li><a href="#">FINANCIE</a></li>
                 <li><a href="#">VENDA SEU CARRO</a></li>
             </ul>
         </nav><!--nav-->
@@ -48,8 +47,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">INÍCIO</a></li>
-                    <li><a href="carros.html">CARROS</a></li>                   
-                    <li><a href="#">FINANCIE</a></li>
+                    <li><a href="carros.html">CARROS</a></li>
                     <li><a href="#" id="li-contato">CONTATO</a></li>
                     <li><a href="#">VENDA SEU CARRO</a></li>
                 </ul>
@@ -83,19 +81,21 @@
     <div id="detalhes-carro">
         
         <div class="desc">
-            <h1>Nome do carro 2</h1>
+            <h1 id="nomeCarro">Nome do carro 2</h1>
             <ul>
                 <li>Cambio: Automático</li><br>
                 <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
                 <li>Ano: </li><br>
                 <li>Combustível:</li><br>
                 <li>Km:</li>
+                <br>
+                <li id="precocarro">R$ <span>100.000</span></li>
             </ul>
             
             
         </div>
 
-        <form>
+        <form id="whatsappForm" method="get">
             <h1>Fale conosco</h1>
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
 

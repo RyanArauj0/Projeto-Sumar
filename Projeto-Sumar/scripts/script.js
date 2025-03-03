@@ -133,3 +133,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/* ================================ FORMULÁRIO PARA WHATSAPP =================================== */
+document.getElementById('whatsappForm').addEventListener('submit', function(event) {
+    event.preventDefault();  // Previne o envio padrão do formulário
+    
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var tel = document.getElementById('tel').value;
+    var mensagem = document.getElementById('mensagem').value;
+    
+    
+    // Pega o nome do carro que está no <h1> e preço
+    var nomeCarro = document.getElementById('nomeCarro').innerText;
+    var valor = document.getElementById('precocarro').innerText;
+
+    // Formata a mensagem com todos os dados, incluindo o nome do carro
+    var mensagemCompleta = `PROPOSTA!!%0A====================%0A%0ANome: ${nome}%0ATelefone: ${tel}%0AEmail: ${email}%0A%0A====================%0ACarro: ${nomeCarro}%0APreço: ${valor}%0A====================%0A%0AMensagem: ${mensagem}%0A%0A====================`;
+
+    // Atualiza a ação do formulário com a mensagem formatada
+    var whatsappUrl = `https://wa.me/5522997648741?text=${mensagemCompleta}`;
+
+    // Envia o usuário para o WhatsApp com os dados
+    window.open(whatsappUrl, '_blank');
+});
+
+/* ================================ Horario de atendimento =================================== */
+
+// Função para verificar o horário e mudar a cor de fundo
+function verificarHorario() {
+    var p = document.getElementById("horario-atendimento");
+    var agora = new Date();
+    var horaAtual = agora.getHours(); // Pega a hora atual
+
+    // Verifica se está entre 8h e 18h
+    if (horaAtual >= 8 && horaAtual < 18) {
+        p.style.backgroundColor = "green";  // Fundo verde
+    } else {
+        p.style.backgroundColor = "red";  // Fundo vermelho
+    }
+}
+
+// Chama a função quando a página for carregada
+window.onload = verificarHorario;
+

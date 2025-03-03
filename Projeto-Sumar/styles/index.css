@@ -292,6 +292,22 @@ header nav.menu-desktop ul li {
     border-top-right-radius: 50px;
 }
 
+.horario{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.horario p{
+    background-color: #087f23;
+    border-radius: 5px;
+    width: 60%;
+    padding: 5px;
+}
+
 /* ===================== SLIDES - INICIO ===================== */
 
 .slider {
@@ -571,6 +587,22 @@ button {
         color: #000000;
         font-weight: bolder;
     }
+
+    .horario{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    
+    .horario p{
+        background-color: #087f23;
+        border-radius: 5px;
+        width: 60%;
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -588,12 +620,6 @@ button {
 
     footer {
         margin-top: 300px;
-    }
-
-    #modo-toggle {
-        position: relative;
-        top: -1px;
-        right: 70px;
     }
 
     #marca5 img {
