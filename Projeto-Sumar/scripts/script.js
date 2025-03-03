@@ -81,6 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Verifica se a página atual é a index.html
+    if (window.location.pathname.includes("venda-carros.html") || window.location.pathname === "/") {
+        document.getElementById("link-venda").classList.add("ativo");
+    }
+});
+
 /* ================================ FILTRO ================================ */
 
 function filtrarCarros() {
@@ -134,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ================================ FORMULÁRIO PARA WHATSAPP =================================== */
+
 document.getElementById('whatsappForm').addEventListener('submit', function(event) {
     event.preventDefault();  // Previne o envio padrão do formulário
     
@@ -156,6 +164,57 @@ document.getElementById('whatsappForm').addEventListener('submit', function(even
     // Envia o usuário para o WhatsApp com os dados
     window.open(whatsappUrl, '_blank');
 });
+
+/* ================================ FORMULÁRIO PARA VENDA =================================== */
+
+document.getElementById('vender-carro').addEventListener('submit', function(event) {
+    event.preventDefault();  
+
+    // Captura dos dados
+    var nome = document.getElementById('nome').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var tel = document.getElementById('tel').value.trim();
+    var nomeCarro = document.getElementById('nome-carro').value.trim();
+    var marcaCarro = document.getElementById('marca').value.trim();
+    var modeloCarro = document.getElementById('modelo').value.trim();
+    var kmCarro = document.getElementById('km').value.trim();
+    var anoCarro = document.getElementById('ano').value.trim();
+    var valor_desejado = document.getElementById('valor').value.trim();
+
+    // Validação: Verifica se todos os campos estão preenchidos
+    if (!nome || !email || !tel || !nomeCarro || !marcaCarro || !modeloCarro || !kmCarro || !anoCarro || !valor_desejado) {
+        alert('Por favor, preencha todos os campos antes de enviar.');
+        return;
+    }
+
+    // Formatação da mensagem
+    var mensagem = `🚗 *VENDA DE CARRO* 🚗\n====================\n` +
+                   `👤 *Nome:* ${nome}\n` +
+                   `📞 *Telefone:* ${tel}\n` +
+                   `📧 *Email:* ${email}\n\n` +
+                   `====================\n🚘 *Detalhes do Carro*\n====================\n` +
+                   `🏎️ *Carro:* ${nomeCarro}\n` +
+                   `🏷️ *Marca:* ${marcaCarro}\n` +
+                   `📌 *Modelo:* ${modeloCarro}\n` +
+                   `🛣️ *KM:* ${kmCarro}\n` +
+                   `📅 *Ano:* ${anoCarro}\n` +
+                   `💰 *Valor desejado:* R$ ${valor_desejado}\n` +
+                   `====================`;
+
+    // Codifica a mensagem para ser enviada na URL
+    var mensagemCodificada = encodeURIComponent(mensagem);
+
+    // Número do WhatsApp (incluindo DDD)
+    var telefone = "5522997648741"; // Verifique se está correto
+
+    // Gera o link do WhatsApp corretamente
+    var whatsappUrl = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemCodificada}`;
+
+    // Abre o WhatsApp com os dados
+    window.open(whatsappUrl, '_blank');
+});
+
+
 
 /* ================================ Horario de atendimento =================================== */
 

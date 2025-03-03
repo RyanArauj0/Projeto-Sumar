@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Estilos-->
-    <link rel="stylesheet" href="styles/carro-detalhes.css">
+    <link rel="stylesheet" href="styles/venda-carros.css">
     <!--Fim dos estilos-->
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Fim do bootstrap icon -->
 
-    <title>Detalhes</title>
+    <title>Contato</title>
 </head>
-
 <body>
+
 <header>
     <div class="interface">
 
@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="carros.html">CARROS</a></li>
-                <li><a href="venda-carros.html">VENDA SEU CARRO</a></li>
+                <li><a href="venda-carros.html" id="link-venda">VENDA SEU CARRO</a></li>
             </ul>
         </nav><!--nav-->
 
@@ -58,62 +58,41 @@
     </div><!-- interface -->
 </header><!-- fim do header -->
 
-<div class="det-carros">
+<main>
+
+    <section class="horario">
+        <h2>Horários de atendimentos</h2>
+        <br>
+        <p id="horario-atendimento">Seg - Sáb: 8hs às 18hs</p>
+    </section>
+
+    <div class="texto-topo">
+        <p>Entre em contato conosco através de nossas rede sociais ou Whatsapp e tire suas duvidas ou peça ajuda com algo relacionado ao site</p>
+    </div>
     
-    <section class="slider">
-        <div class="slider-content">
-            <div class="slide-box primeiro" id="carro1-inicio" id="carro1-inicio"></div>
+    <section id="entre-em-contato">
+        
+        <div class="contato">
+            <br>
+            <br>
+            <form action="" method="get" id="contato-wpp">
 
-            <div class="slide-box" id="carro2-inicio">
-                
-            </div>
+                <h2>Entre em contato conosco</h2>
 
-            <div class="slide-box" id="carro3-inicio">
-                
-            </div>
-        </div>
-        <div class="nav-buttons">
-            <button onclick="prevSlide()">&#10094;</button>
-            <button onclick="nextSlide()">&#10095;</button>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
+
+                <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone" autocomplete=off required>
+
+                <input type="email" name="email" id="email" placeholder="Informe seu e-mail" autocomplete=off required>
+
+                <br>
+                <br>
+                <button id="botao-enviar-form" type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 
-    <div id="detalhes-carro">
-        
-        <div class="desc">
-            <h1 id="nomeCarro">Nome do carro 2</h1>
-            <ul>
-                <li>Cambio: Automático</li><br>
-                <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
-                <li>Ano: </li><br>
-                <li>Combustível:</li><br>
-                <li>Km:</li>
-                <br>
-                <li id="precocarro">R$ <span>100.000</span></li>
-            </ul>
-            
-            
-        </div>
-
-        <form id="whatsappForm" method="get">
-            <h1>Fale conosco</h1>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
-
-            <input type="email" name="email" id="email" placeholder="Informe seu e-mail" autocomplete=off required>
-
-            <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone" autocomplete=off required>
-
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua Proposta" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-        
-    </div>
-    
-</div>
-
-
-
+</main>
 
 <footer>
     <div class="interface">
@@ -123,9 +102,9 @@
                     <img class="logo" src="#" alt="Logo">
                 </div><!-- fim da logo-footer -->
                 <div class="btn-social">
-                    <a href="#"><button class="icon-footer"><i class="bi bi-instagram"></i></button></a>
-                        <a href="contato.html"><button class="icon-footer"><i class="bi bi-whatsapp"></i></button></a>
-                    <a href="#"><button class="icon-footer"><i class="bi bi-facebook"></i></button></a>
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="contato.html"><button><i class="bi bi-whatsapp"></i></button></a>
+                    <a href="#"><button><i class="bi bi-facebook"></i></button></a>
                 </div><!-- fim do btn-social -->
             </div><!-- fim do flex -->
         </div><!-- fim line-footer -->
@@ -135,6 +114,7 @@
         </div>
     </div>
 </footer>
-<script src="scripts/script.js"></script>
+
+<script src="scripts/contato.js"></script>
 </body>
 </html>
