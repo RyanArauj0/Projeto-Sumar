@@ -147,6 +147,7 @@ document.getElementById('vender-carro').addEventListener('submit', function(even
 
     // Captura dos dados
     var nome = document.getElementById('nome').value.trim();
+    var cpf = document.getElementById('cpf').value.trim();
     var email = document.getElementById('email').value.trim();
     var tel = document.getElementById('tel').value.trim();
     var nomeCarro = document.getElementById('nome-carro').value.trim();
@@ -165,6 +166,7 @@ document.getElementById('vender-carro').addEventListener('submit', function(even
     // Formatação da mensagem
     var mensagem = `🚗 *VENDA DE CARRO* 🚗\n====================\n` +
                    `👤 *Nome:* ${nome}\n` +
+                   `📞 *Cpf:* ${cpf}\n` +
                    `📞 *Telefone:* ${tel}\n` +
                    `📧 *Email:* ${email}\n\n` +
                    `====================\n🚘 *Detalhes do Carro*\n====================\n` +
@@ -189,7 +191,18 @@ document.getElementById('vender-carro').addEventListener('submit', function(even
     window.open(whatsappUrl, '_blank');
 });
 
+/* ================================ FORMATAR CPF =================================== */
 
+// Chama a função quando a página for carregada
+window.onload = verificarHorario;
+
+function formatarCPF(campo) {
+    let cpf = campo.value.replace(/\D/g, ""); 
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf = cpf.replace(/(\d{3})(\d{2})$/, "$1-$2");
+    campo.value = cpf;
+}
 
 /* ================================ Horario de atendimento =================================== */
 
@@ -206,7 +219,3 @@ function verificarHorario() {
         p.style.backgroundColor = "red";  // Fundo vermelho
     }
 }
-
-// Chama a função quando a página for carregada
-window.onload = verificarHorario;
-
