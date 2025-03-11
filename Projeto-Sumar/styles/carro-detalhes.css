@@ -317,25 +317,26 @@ header nav.menu-desktop ul li {
 
 .desc span {
     display: flex;
-    padding: 3px;
+    margin: auto;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 15px;
     width: 50px;
-    margin-left: 5px;
+    height: 20px;
+    text-align: center;
 }
 
 .desc h1 {
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 #detalhes-carro ul li {
     display: flex;
     align-items: start;
     justify-content: start;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 /* ===================== FORMULARIO ===================== */
@@ -407,28 +408,66 @@ textarea {
     
 }
 
-/*=========================================================== INÍCIO DE CARROS ===========================================================*/
+/*============================ CARRO 1 ===============================*/
 
 #carro1-inicio {
-    background-image: url('../assets/carro1-sumar.jpeg');
+    background-image: url('../assets/carro1/carro-1-amostra.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #carro2-inicio {
-    background-image: url('../assets/carro-2.jpg');
+    background-image: url('../assets/carro1/carro1b.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #carro3-inicio {
-    background-image: url('../assets/carro-3.jpg');
+    background-image: url('../assets/carro1/carro2b.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#carro4-inicio {
+    background-image: url('../assets/carro1/carro3b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro5-inicio {
+    background-image: url('../assets/carro1/carro4b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro6-inicio {
+    background-image: url('../assets/carro1/carro5b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro7-inicio {
+    background-image: url('../assets/carro1/carro6b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro8-inicio {
+    background-image: url('../assets/carro1/carro7b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*============================ CARRO 2 ===============================*/
+
 
 
 
@@ -532,6 +571,8 @@ button {
         align-items: center;
         margin-bottom: 100px;
     }
+
+
 
     .marcas {
         flex-direction: row;
@@ -643,17 +684,15 @@ button {
     .slider-content {
         display: flex;
         width: 100%;
+        height: 400px;
+        margin-top: 80px;
         transition: transform 1s ease-in-out;
     }
     
-    .slide-box {
-        min-width: 100%;
-    }
     
     .slide-box {
         width: 100%;
         height: 300px;
-        
     }
     
     input {

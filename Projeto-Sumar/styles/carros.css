@@ -812,13 +812,13 @@ i {
 
     .abrir-menu{
         display: block;
-        margin-left: 200px;
+        margin-left: 240px;
     }
 
     #modo-toggle {
         position: relative;
         top: auto;
-        right: 80px;
+        right: 70px;
     }
 
     .filtro {

@@ -60,48 +60,6 @@
 
 <main>
 
-    
-
-    <section class="marcas"> <!-- Marcas -->
-
-        <div class="marca" id="marca1">
-            <img src="assets/logo-carro1.png" alt="Marca do carro">
-        </div>
-
-        <div class="marca">
-            <div class="marca" id="marca2">
-                <img src="assets/logo-carro2.png" alt="Marca do carro">
-            </div>
-        </div>
-
-        <div class="marca">
-            <div class="marca" id="marca3">
-                <img src="assets/logo-carro3.png" alt="Marca do carro">
-            </div>
-        </div>
-
-        <div class="marca">
-            <div class="marca" id="marca4">
-                <img src="assets/logo-carro4.png" alt="Marca do carro">
-            </div>
-        </div>
-
-        <div class="marca">
-            <div class="marca" id="marca5">
-                <img src="assets/logo-carro5.png" alt="Marca do carro">
-            </div>
-        </div>
-
-        <div class="marca">
-            <div class="marca" id="marca6">
-                <img src="assets/logo-carro6.png" alt="Marca do carro">
-            </div>
-        </div>
-
-    </section> <!-- Fim Marcas -->
-
-    <!--Filtro-->
-
     <section class="filtro">
         <label for="pesquisa">Pesquisar por nome:</label>
         <input type="text" id="pesquisa" placeholder="Digite o nome do carro..." oninput="filtrarCarros()" autocomplete="off">
@@ -127,23 +85,23 @@
 
         <!-- =============================================== Carro 1 ========================================================== -->
 
-        <div class="carro" data-marca="audi" data-id="1" data-preco="50000" data-nome="FORD MUSTANG">
+        <div class="carro" data-marca="volkswagen" data-id="1" data-preco="50000" data-nome="Virtus 1.6 MSI">
             <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
-            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
-            <div class="nome">FORD MUSTANG</div> <!-- Nome de exibição -->
+            <img src="assets/carro1/carro-1-amostra.jpeg" alt="ford mustang">
+            <div class="nome">Virtus 1.6 MSI</div> <!-- Nome de exibição -->
 
             <div class="desc"> <!-- Descrição -->
                 <ul>
-                    <li>Cambio: Automático</li><br>
-                    <li>Chave reserva: <span class="sim-nao">Não</span></li><br> <!-- Chave reserva sim/nao -->
-                    <li>Ano: </li><br>
-                    <li>Combustível:</li><br>
-                    <li>Km:</li>
+                    <li>Cambio: Manual</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2019</li><br>
+                    <li>Combustível: Gasolina</li><br>
+                    <li>Km: ---</li>
                 </ul>
             </div>
             <div class="saiba-mais">
-                <div class="btn-valor">R$50.000</div> <!-- Preço -->
-                <a href="carro-1.html" target="" rel="noopener noreferrer"><button id="saiba-mais" data-id="1">SAIBA MAIS</button></a>
+                <div class="btn-valor">R$ 66.900</div> <!-- Preço -->
+                <a href="assets/carro1/carro-1.html" target="" rel="noopener noreferrer"><button id="saiba-mais" data-id="1">SAIBA MAIS</button></a>
             </div>
         </div>
 
@@ -151,9 +109,9 @@
 
         <!-- =============================================== Carro 2 ========================================================== -->
 
-        <div class="carro" data-marca="JAGUAR" data-id="JAGUAR" data-preco="100000" data-nome="JAGUAR">
+        <div class="carro" data-marca="jaguar" data-id="jaguar" data-preco="100000" data-nome="jaguar">
             <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
-            <img src="assets/carro1-sumar.jpeg" alt="FORD MUSTANG">
+            <img src="assets/carro1-sumar.jpeg" alt="jaguar">
             <div class="nome">JAGUAR</div> <!-- Nome de exibição -->
 
             <div class="desc"> <!-- Descrição -->
