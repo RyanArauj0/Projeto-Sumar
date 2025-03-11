@@ -111,6 +111,15 @@ function filtrarCarros() {
     });
 }
 
+// Adiciona eventos para ativar o filtro ao mudar a marca ou o preço
+document.getElementById('marca').addEventListener('change', filtrarCarros);
+document.getElementById('preco').addEventListener('input', filtrarCarros);
+
+
+function atualizarPreco(valor) {
+    document.getElementById('preco-valor').textContent = `R$ ${parseInt(valor).toLocaleString('pt-BR')}`;
+}
+
 
 /* ================================ AVISO DE ESTOQUE ================================ */
 

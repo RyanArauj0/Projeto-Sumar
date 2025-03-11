@@ -819,7 +819,7 @@ button {
 
 }
 
-@media (max-width: 1905px) {
+@media (min-width: 1380px) {
     .slider {
         width: 350px;
         height: 300px;
@@ -844,28 +844,78 @@ button {
         margin-top: 300px;
     }
 
-    header a {
-        display: none;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
     header {
-        width: 50%;
-        margin-bottom: 50px;
-        padding: 10px 1%;
-        background-color: #aa0808;
-        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 4%;
+        background-color: #000000;
+    }
+    
+    header > .interface {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    
+    .interface h1 {
+        color: white;
+    }
+    
+    header a {
+        font-family: 'Times New Roman', Times, sans-serif;
+        color: white;
+        text-decoration: none;
+        text-transform: none;
+        display: inline-block;
+        transition: .05s;
+        font-size: 15px;
+    }
+    
+    header li a:hover {
+        color: #7c7c7c;
+        transform: scale(1.05);
+    }
+    
+    header nav ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    header nav.menu-desktop ul li {
+        display: inline-block;
+        padding: 0px 40px;
+    }
+    
+    .btn-contato button:hover {
+        color: #fff;
+        border-radius: 0px;
+    }
+    
+    .menu-desktop a {
+        position: relative;
+        text-decoration: none;
+        color: #7c7c7c;
+        padding-bottom: 5px;
+    }
+    
+    .menu-desktop a.ativo::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #00ff6a; /* Cor da linha */
+        transition: 0.3s ease-in-out;
     }
 
     .abrir-menu{
-        display: block;
+        display: none;
         margin-left: 250px;
     }
 
     #modo-toggle {
-        position: relative;
-        top: -2px;
-        right: 80px;
+        top: auto;
+        right: 260px;
     }
 
     #marca5 img {
@@ -881,7 +931,7 @@ button {
     }
 
     .topo-do-site {
-        width: 90%;
+        width: 10%;
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -941,7 +991,7 @@ button {
         display: flex;
         margin-top: 200px;
         margin-bottom: 100px;
-        width: 100px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         
@@ -976,20 +1026,20 @@ button {
         clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
     }
     
-    form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
     input {
         padding: 10px;
         margin: 10px;
         border-radius: 6px;
         border: none;
         outline: none;
+        background-color: beige;
         
+    }
+    
+    form {
+        display: block;
+        text-align: center;
+        width: 100%;
     }
 
     #km {
