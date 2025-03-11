@@ -271,7 +271,7 @@ header nav.menu-desktop ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
+    margin: 100px 0px;
     width: 100%;
     height: 500px;
     
@@ -383,7 +383,7 @@ textarea {
 
 .slider {
     width: 50%;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
     position: relative;
     margin: 15px;
@@ -400,13 +400,9 @@ textarea {
 
 .slide-box {
     min-width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
-.slide-box {
-    width: 100%;
-    
-}
 
 /*============================ CARRO 1 ===============================*/
 
@@ -560,27 +556,6 @@ button {
 /* ===================== RESPONSIVIDADE ===================== */
 
 @media (max-width: 600px) {
-    .slider {
-        width: 350px;
-        height: 300px;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
-
-
-    .marcas {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 90px;
-    }
 
     footer {
         margin-top: 200px;
@@ -669,7 +644,6 @@ button {
         margin-right: 0px;
     }
 
-
     .slider {
         width: 100%;
         height: 500px;
@@ -735,18 +709,6 @@ button {
 }
 
 @media (min-width: 1380px) {
-    .slider {
-        width: 350px;
-        height: 300px;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
     footer {
         margin-top: 300px;
     }
@@ -822,7 +784,7 @@ button {
 
     #modo-toggle {
         top: auto;
-        right: 260px;
+        right: 80px;
     }
 
     .menu-mobile #li-contato {
@@ -893,8 +855,8 @@ button {
     }
     
     .slide-box {
-        min-width: 100%;
-        height: 400px;
+        width: 100%;
+        height: 415px;
     }
     
     .slide-box {
@@ -910,6 +872,10 @@ button {
         outline: none;
         background-color: beige;
         
+    }
+
+    textarea {
+        background-color: beige
     }
     
     form {

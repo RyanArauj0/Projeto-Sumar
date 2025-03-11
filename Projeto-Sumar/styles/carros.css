@@ -282,6 +282,8 @@ header nav.menu-desktop ul li {
     display: flex;
     flex-direction: row;
     border-top: 1px solid rgba(0, 0, 0, 0.555);
+    text-align: center;
+    
 }
 
 #saiba-mais {
@@ -290,17 +292,27 @@ header nav.menu-desktop ul li {
 
 .btn-valor {
     font-size: 18px;
+    width: 50%;
+    height: 10px;
 }
 
-.saiba-mais button {
+#saiba-mais {
     font-size: 20px;
     font-weight: bolder;
     border: none;
-    padding: 7px;
-    width: 100%;
+    padding: 3px;
+    width: 50%;
     height: auto;
     cursor: pointer;
     background-color: rgb(25, 194, 34);
+    color: #000;
+}
+
+#saiba-mais a {
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    
 }
 
 #saiba-mais:hover {  
@@ -313,6 +325,7 @@ header nav.menu-desktop ul li {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
     margin: auto;
     color: #000;
     padding: 10px 20px;
@@ -327,7 +340,7 @@ header nav.menu-desktop ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    height: 20px;
     width: 100%;
     background-color: darkgreen;
     color: #fff;
@@ -633,24 +646,6 @@ i {
 /* ===================== RESPONSIVIDADE ===================== */
 
 @media (max-width: 600px) {
-    .slider {
-        width: 150px;
-        height: 100px;
-        overflow: hidden;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
-    .marcas {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 90px;
-    }
 
     footer {
         margin-top: 150px;
@@ -671,6 +666,11 @@ i {
         display: none;
     }
 
+    header nav.menu-desktop ul li {
+        display: none;
+        padding: 0px 40px;
+    }
+
     .abrir-menu{
         display: block;
         margin-left: 250px;
@@ -678,8 +678,8 @@ i {
 
     #modo-toggle {
         position: relative;
-        top: -1px;
-        right: 70px;
+        top: auto;
+        right: 150px;
     }
 
     .filtro {
@@ -695,7 +695,7 @@ i {
         width: 1000px;
     }
     
-    select{
+    select {
         text-align: center;
         padding: 5px;
         width: 170px;
@@ -725,22 +725,6 @@ i {
         outline: none;
     }
 
-    .marcas {
-        margin-bottom: 400px;
-    }
-
-    #marca5 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
-    }
-
     .topo-do-site {
         width: 90%;
         display: flex;
@@ -767,6 +751,10 @@ i {
 
     .saiba-mais button {
         height: 6vh;
+    }
+
+    .aviso {
+        height: 20px;
     }
 
 }
@@ -910,7 +898,7 @@ i {
 
 }
 
-@media (min-width: 1380px) {
+@media (max-width: 1380px) {
     .slider {
         width: 350px;
         height: 300px;
@@ -1156,4 +1144,6 @@ i {
         background-color: whitesmoke;
         border-radius: 3px;
     }
+
+    
 }

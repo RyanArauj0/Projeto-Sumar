@@ -155,10 +155,10 @@ document.getElementById('vender-carro').addEventListener('submit', function(even
     var modeloCarro = document.getElementById('modelo').value.trim();
     var kmCarro = document.getElementById('km').value.trim();
     var anoCarro = document.getElementById('ano').value.trim();
-    var valor_desejado = document.getElementById('valor').value.trim();
+    var valor_do_carro = document.getElementById('valor').value.trim();
 
     // Validação: Verifica se todos os campos estão preenchidos
-    if (!nome || !email || !tel || !nomeCarro || !marcaCarro || !modeloCarro || !kmCarro || !anoCarro || !valor_desejado) {
+    if (!nome || !email || !tel || !nomeCarro || !marcaCarro || !modeloCarro || !kmCarro || !anoCarro || !valor_do_carro) {
         alert('Por favor, preencha todos os campos antes de enviar.');
         return;
     }
@@ -175,7 +175,7 @@ document.getElementById('vender-carro').addEventListener('submit', function(even
                    `📌 *Modelo:* ${modeloCarro}\n` +
                    `🛣️ *KM:* ${kmCarro}\n` +
                    `📅 *Ano:* ${anoCarro}\n` +
-                   `💰 *Valor desejado:* R$ ${valor_desejado}\n` +
+                   `💰 *Valor do carro:* R$ ${valor_do_carro}\n` +
                    `====================`;
 
     // Codifica a mensagem para ser enviada na URL

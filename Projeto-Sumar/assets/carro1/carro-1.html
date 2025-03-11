@@ -157,27 +157,35 @@
         });
     });
 
+    /* ================================ FORMULÁRIO PARA WHATSAPP =================================== */
+
     document.getElementById('whatsappForm').addEventListener('submit', function(event) {
     event.preventDefault();  // Previne o envio padrão do formulário
     
-        var nome = document.getElementById('nome').value;
-        var email = document.getElementById('email').value;
-        var tel = document.getElementById('tel').value;
-        var mensagem = document.getElementById('mensagem').value;
-        
-        
-        // Pega o nome do carro que está no <h1> e preço
-        var nomeCarro = document.getElementById('nomeCarro').innerText;
-        var valor = document.getElementById('precocarro').innerText;
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var tel = document.getElementById('tel').value;
+    var mensagem = document.getElementById('mensagem').value;
+    
+    
+    // Pega o nome do carro que está no <h1> e preço
+    var nomeCarro = document.getElementById('nomeCarro').innerText;
+    var valor = document.getElementById('precocarro').innerText;
 
-        // Formata a mensagem com todos os dados, incluindo o nome do carro
-        var mensagemCompleta = `PROPOSTA!!%0A====================%0A%0ANome: ${nome}%0ATelefone: ${tel}%0AEmail: ${email}%0A%0A====================%0ACarro: ${nomeCarro}%0APreço: ${valor}%0A====================%0A%0AMensagem: ${mensagem}%0A%0A====================`;
+    // Formata a mensagem com todos os dados, incluindo o nome do carro
+    var mensagemCompleta = `PROPOSTA!!\n====================\n\nNome: ${nome}\nTelefone: ${tel}\nEmail: ${email}\n\n====================\nCarro: ${nomeCarro}\nPreço: ${valor}\n====================\n\nMensagem: ${mensagem}\n\n====================`;
 
-        // Atualiza a ação do formulário com a mensagem formatada
-        var whatsappUrl = `http://web.whatsapp.com/5522997648741?text=${mensagemCompleta}`;
+    // Número do WhatsApp (incluindo DDD)
+    var telefone = "5522997648741"; // Verifique se está correto
 
-        // Envia o usuário para o WhatsApp com os dados
-        window.open(whatsappUrl, '_blank');
+    // Codifica a mensagem para ser enviada na URL
+    var mensagemCodificada = encodeURIComponent(mensagemCompleta);
+
+    // Atualiza a ação do formulário com a mensagem formatada
+    var whatsappUrl = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemCodificada}`;
+
+    // Envia o usuário para o WhatsApp com os dados
+    window.open(whatsappUrl, '_blank');
 });
 
 </script>
