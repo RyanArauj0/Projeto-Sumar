@@ -464,7 +464,112 @@ textarea {
 
 /*============================ CARRO 2 ===============================*/
 
+#carro1-inicio {
+    background-image: url('../assets/carro2/carro2-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#carro2-inicio {
+    background-image: url('../assets/carro2/carro2a.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro3-inicio {
+    background-image: url('../assets/carro2/carro2b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro4-inicio {
+    background-image: url('../assets/carro2/carro2c.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro5-inicio {
+    background-image: url('../assets/carro2/carro2d.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro6-inicio {
+    background-image: url('../assets/carro2/carro2e.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro7-inicio {
+    background-image: url('../assets/carro2/carro2f.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*============================ CARRO 3 ===============================*/
+
+#carro1-inicio {
+    background-image: url('../assets/carro3/carro3-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro2-inicio {
+    background-image: url('../assets/carro3/carro3-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro3-inicio {
+    background-image: url('../assets/carro3/carro3-2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro4-inicio {
+    background-image: url('../assets/carro3/carro3-3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro5-inicio {
+    background-image: url('../assets/carro3/carro3-4.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro6-inicio {
+    background-image: url('../assets/carro3/carro3-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro7-inicio {
+    background-image: url('../assets/carro3/carro3-6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro8-inicio {
+    background-image: url('../assets/carro3/carro3-7.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*=========================================================== FIM DE CARROS ===========================================================*/

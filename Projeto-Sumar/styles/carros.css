@@ -242,11 +242,12 @@ header nav.menu-desktop ul li {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 510px;
+    height: 600px;
     color: #4D5C7B;
     font-weight: bolder;
     background-color: whitesmoke;
     border-radius: 3px;
+    margin-bottom: 30px;
 }
 
 .nome {
@@ -261,7 +262,7 @@ header nav.menu-desktop ul li {
 
 .desc {
     width: 300px;
-    height: 200px;
+    height: 300px;
     padding: 10px;
 }
 
@@ -287,13 +288,14 @@ header nav.menu-desktop ul li {
 }
 
 #saiba-mais {
+    height: 300px;
     border-left: 1px solid rgba(0, 0, 0, 0.555); 
 }
 
 .btn-valor {
     font-size: 18px;
     width: 50%;
-    height: 10px;
+    height: 30px;
 }
 
 #saiba-mais {
@@ -898,7 +900,7 @@ i {
 
 }
 
-@media (max-width: 1380px) {
+@media (min-width: 1380px) {
     .slider {
         width: 350px;
         height: 300px;
@@ -994,7 +996,7 @@ i {
 
     #modo-toggle {
         top: auto;
-        right: 260px;
+        right: 70px;
     }
 
     #marca5 img {
@@ -1138,7 +1140,7 @@ i {
         flex-direction: column;
         align-items: center;
         width: 300px;
-        height: 510px;
+        height: 600px;
         color: #4D5C7B;
         font-weight: bolder;
         background-color: whitesmoke;
