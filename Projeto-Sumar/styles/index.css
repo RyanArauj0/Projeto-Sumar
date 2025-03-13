@@ -339,6 +339,8 @@ header nav.menu-desktop ul li {
     
 }
 
+/* ===================== CARROS - INICIO ===================== */
+
 #carro1-inicio {
     background-image: url('../assets/carro-1.jpg');
     background-position: center;
@@ -360,6 +362,7 @@ header nav.menu-desktop ul li {
     background-size: cover;
 }
 
+/* ===================== FIM CARROS INICIO ===================== */
 
 .nav-buttons {
     position: absolute;

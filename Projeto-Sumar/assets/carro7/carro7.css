@@ -1,0 +1,29 @@
+/*============================ CARRO 7 ===============================*/
+
+#carro1-inicio {
+    background-image: url('carro7-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro2-inicio {
+    background-image: url('carro7-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro3-inicio {
+    background-image: url('carro7-2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro4-inicio {
+    background-image: url('carro7-3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

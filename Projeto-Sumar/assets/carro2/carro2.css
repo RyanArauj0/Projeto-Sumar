@@ -1,0 +1,104 @@
+/*============================ CARRO 2 ===============================*/
+
+#carro1-inicio {
+    background-image: url('carro2-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro2-inicio {
+    background-image: url('carro2a.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro3-inicio {
+    background-image: url('carro2b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro4-inicio {
+    background-image: url('carro2c.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro5-inicio {
+    background-image: url('carro2d.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro6-inicio {
+    background-image: url('carro2e.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro7-inicio {
+    background-image: url('carro2f.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+    /*============================ CARRO 2 ===============================*/
+
+#carro1-inicio {
+    background-image: url('carro2-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro2-inicio {
+    background-image: url('carro2a.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro3-inicio {
+    background-image: url('carro2b.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro4-inicio {
+    background-image: url('carro2c.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro5-inicio {
+    background-image: url('carro2d.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro6-inicio {
+    background-image: url('carro2e.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro7-inicio {
+    background-image: url('carro2f.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+}

@@ -1,0 +1,43 @@
+/*============================ CARRO 5 ===============================*/
+
+#carro1-inicio {
+    background-image: url('carro5-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro2-inicio {
+    background-image: url('carro5-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro3-inicio {
+    background-image: url('carro5-2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro4-inicio {
+    background-image: url('carro5-3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro5-inicio {
+    background-image: url('carro5-4.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#carro6-inicio {
+    background-image: url('carro5-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

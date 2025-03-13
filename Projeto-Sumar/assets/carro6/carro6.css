@@ -1,0 +1,68 @@
+/*============================ CARRO 6 ===============================*/
+
+#carro1-inicio {
+    background-image: url('carro6-capa.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro2-inicio {
+    background-image: url('carro6-1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro3-inicio {
+    background-image: url('carro6-2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro4-inicio {
+    background-image: url('carro6-3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro5-inicio {
+    background-image: url('carro6-4.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro6-inicio {
+    background-image: url('carro6-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+@media (max-width: 600px) {
+    #carro1-inicio {
+        margin-top: -150px;
+        height: 450px;
+        width: 100%;
+        clip-path: inset(150px 0 0 0);
+    }
+    
+    #carro2-inicio {
+        margin-top: -150px;
+        height: 450px;
+        width: 100%;
+        clip-path: inset(150px 0 0 0);
+    }
+    
+    #carro3-inicio {
+        margin-top: -150px;
+        height: 450px;
+        width: 100%;
+        clip-path: inset(150px 0 0 0);
+    }
+}

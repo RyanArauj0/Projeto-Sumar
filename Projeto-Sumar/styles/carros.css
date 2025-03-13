@@ -183,50 +183,6 @@ header nav.menu-desktop ul li {
     transition: 0.3s ease-in-out;
 }
 
-/* ===================== MARCAS - CARROS ===================== */
-
-.marcas {
-    width: 70%;
-    height: 70px;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 90px;
-}
-
-.marca {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
-.marca img {
-    width: 90px;
-    height: 60px;
-}
-
-#marca1 img {
-    margin-top: 10px;
-    width: 100px;
-    height: 40px;
-}
-
-#marca5 img {
-    width: 100px;
-    height: 60px;
-    margin-left: -20px;
-}
-
-#marca6 img {
-    width: 100px;
-    height: 60px;
-    margin-left: -20px;
-}
-
 /* ===================== ESTILO DO CORPO ===================== */
 
 .carros {
@@ -242,12 +198,26 @@ header nav.menu-desktop ul li {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 600px;
+    max-height: 600px;
     color: #4D5C7B;
     font-weight: bolder;
     background-color: whitesmoke;
     border-radius: 3px;
     margin-bottom: 30px;
+}
+
+#fusca {
+    margin-top: -150px;
+    height: 380px;
+    width: 100%;
+    clip-path: inset(150px 0 0 0);
+}
+
+#CIVIC, #Vectra {
+    margin-top: -150px;
+    height: 380px;
+    width: 100%;
+    clip-path: inset(150px 0 0 0);
 }
 
 .nome {

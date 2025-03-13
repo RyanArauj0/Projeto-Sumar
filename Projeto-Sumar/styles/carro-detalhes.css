@@ -382,7 +382,7 @@ textarea {
 /* ===================== SLIDES - DETALHES ===================== */
 
 .slider {
-    width: 50%;
+    width: 10%;
     height: 600px;
     overflow: hidden;
     position: relative;
@@ -403,181 +403,12 @@ textarea {
     height: 600px;
 }
 
-
-/*============================ CARRO 1 ===============================*/
-
-#carro1-inicio {
-    background-image: url('../assets/carro1/carro-1-amostra.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro2-inicio {
-    background-image: url('../assets/carro1/carro1b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro3-inicio {
-    background-image: url('../assets/carro1/carro2b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro4-inicio {
-    background-image: url('../assets/carro1/carro3b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro5-inicio {
-    background-image: url('../assets/carro1/carro4b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro6-inicio {
-    background-image: url('../assets/carro1/carro5b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro7-inicio {
-    background-image: url('../assets/carro1/carro6b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro8-inicio {
-    background-image: url('../assets/carro1/carro7b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*============================ CARRO 2 ===============================*/
-
-#carro1-inicio {
-    background-image: url('../assets/carro2/carro2-capa.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro2-inicio {
-    background-image: url('../assets/carro2/carro2a.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro3-inicio {
-    background-image: url('../assets/carro2/carro2b.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro4-inicio {
-    background-image: url('../assets/carro2/carro2c.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro5-inicio {
-    background-image: url('../assets/carro2/carro2d.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro6-inicio {
-    background-image: url('../assets/carro2/carro2e.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro7-inicio {
-    background-image: url('../assets/carro2/carro2f.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/*============================ CARRO 3 ===============================*/
-
-#carro1-inicio {
-    background-image: url('../assets/carro3/carro3-capa.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro2-inicio {
-    background-image: url('../assets/carro3/carro3-1.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro3-inicio {
-    background-image: url('../assets/carro3/carro3-2.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro4-inicio {
-    background-image: url('../assets/carro3/carro3-3.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro5-inicio {
-    background-image: url('../assets/carro3/carro3-4.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro6-inicio {
-    background-image: url('../assets/carro3/carro3-5.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro7-inicio {
-    background-image: url('../assets/carro3/carro3-6.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#carro8-inicio {
-    background-image: url('../assets/carro3/carro3-7.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 /*=========================================================== FIM DE CARROS ===========================================================*/
 
 .nav-buttons {
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
@@ -683,6 +514,7 @@ button {
         padding: 10px 2%;
         background-color: #000000;
         font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: -300px;
     }
 
     header nav ul {
@@ -691,12 +523,12 @@ button {
 
     .abrir-menu{
         display: block;
-        margin-left: 250px;
+        margin-left: 330px;
     }
 
     #modo-toggle {
         position: relative;
-        top: -1px;
+        top: auto;
         right: 70px;
     }
     
@@ -745,33 +577,39 @@ button {
     #detalhes-carro {
         
         width: 100%;
-        height: 63.8%;
-        margin-right: 0px;
+        height: 93.8%;
+    }
+  
+
+    /*========== POSICIONAR SLIDE E DESCRIÇÃO AQUI ==========*/
+    header {
+        padding: 10px 2%;
+        background-color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: -300px;
     }
 
     .slider {
         width: 100%;
         height: 500px;
         overflow: hidden;
-        position: relative;
-        margin: 0px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: -350px;
     }
+
+    /*========== AJUSTAR SLIDE E DESCRIÇÃO AQUI ==========*/
+
     
     .slider-content {
         display: flex;
         width: 100%;
         height: 400px;
-        margin-top: 80px;
         transition: transform 1s ease-in-out;
     }
     
     
     .slide-box {
         width: 100%;
-        height: 300px;
+        height: 400px;
     }
     
     input {
@@ -786,36 +624,20 @@ button {
         margin-bottom: 5px;
     }
 
-    
-}
-
-@media (max-width: 400px) {
     form {
-        background-color: #64646431;
-        padding: 20px;
-        width: 200px;
-        height: 400px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        width: 50%;
     }
 
     .desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        width: 200px;
-        height: 400px;
-        background-color: rgb(231, 229, 229);
-        color: #4D5C7B;
-        
+        width: 50%;
     }
 }
 
+
 @media (min-width: 1380px) {
     footer {
-        margin-top: 300px;
+        width: 100%;
+        margin-top: 100px;
     }
 
     header {
@@ -937,20 +759,20 @@ button {
         justify-content: center;
         margin-top: 0px;
         width: 80%;
-        height: 500px;
+        height: 600px;
         margin: auto;
-        margin-top: 250px;
+        margin-top: 50px;
     }
 
     .slider {
-        width: 50%;
-        height: 500px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        height: 383.2px;
         overflow: hidden;
         position: relative;
-        margin: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 0px;
     }
     
     .slider-content {
@@ -962,11 +784,6 @@ button {
     .slide-box {
         width: 100%;
         height: 415px;
-    }
-    
-    .slide-box {
-        width: 100%;
-        
     }
     
     input {
@@ -991,5 +808,11 @@ button {
 
     #km {
         margin-top: -11px;
+    }
+
+    .desc {
+        
+        width: 70%;
+        height: auto;
     }
 }
