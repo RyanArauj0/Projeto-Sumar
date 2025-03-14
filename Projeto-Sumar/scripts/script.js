@@ -168,7 +168,7 @@ document.getElementById('whatsappForm').addEventListener('submit', function(even
     var mensagemCompleta = `PROPOSTA!!%0A====================%0A%0ANome: ${nome}%0ATelefone: ${tel}%0AEmail: ${email}%0A%0A====================%0ACarro: ${nomeCarro}%0APreço: ${valor}%0A====================%0A%0AMensagem: ${mensagem}%0A%0A====================`;
 
     // Atualiza a ação do formulário com a mensagem formatada
-    var whatsappUrl = `https://wa.me/5522997648741?text=${mensagemCompleta}`;
+    var whatsappUrl = `https://wa.me/5522999706356?text=${mensagemCompleta}`;
 
     // Envia o usuário para o WhatsApp com os dados
     window.open(whatsappUrl, '_blank');
@@ -214,7 +214,7 @@ document.getElementById('vender-carro').addEventListener('submit', function(even
     var mensagemCodificada = encodeURIComponent(mensagem);
 
     // Número do WhatsApp (incluindo DDD)
-    var telefone = "5522997648741"; // Verifique se está correto
+    var telefone = "5522999706356"; // Verifique se está correto
 
     // Gera o link do WhatsApp corretamente
     var whatsappUrl = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemCodificada}`;

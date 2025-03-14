@@ -66,7 +66,7 @@ document.getElementById('contato-wpp').addEventListener('submit', function(event
     var mensagemCodificada = encodeURIComponent(mensagem);
 
     // Número do WhatsApp (incluindo DDD)
-    var telefone = "5522997648741"; // Verifique se está correto
+    var telefone = "5522999706356"; // Verifique se está correto
 
     // Gera o link do WhatsApp corretamente
     var whatsappUrl = `https://api.whatsapp.com/send?phone=${telefone}&text=${mensagemCodificada}`;

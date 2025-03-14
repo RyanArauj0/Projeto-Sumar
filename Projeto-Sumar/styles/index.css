@@ -46,6 +46,11 @@ body {
         box-shadow: 0px 0px 40px 10px #ffffff10;
     
     }
+
+    header {
+        padding: 10px 4%;
+        background-color: #1b1b1bd2;
+    }
 }
 
 /* Botão de alternância */
@@ -122,6 +127,14 @@ header {
     background-color: #000000;
 }
 
+.rfs-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8rem;
+    position: absolute;
+    left: 100px;
+}
+
 header > .interface {
     display: flex;
     align-items: center;
@@ -129,9 +142,7 @@ header > .interface {
     justify-content: space-between;
 }
 
-.interface h1 {
-    color: white;
-}
+
 
 header a {
     font-family: 'Times New Roman', Times, sans-serif;
@@ -342,25 +353,47 @@ header nav.menu-desktop ul li {
 /* ===================== CARROS - INICIO ===================== */
 
 #carro1-inicio {
-    background-image: url('../assets/carro-1.jpg');
+    background-image: url('../slide-inicio/carro1-inicio.jpeg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #carro2-inicio {
-    background-image: url('../assets/carro-2.jpg');
+    background-image: url('../slide-inicio/carro2-inicio.jpeg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #carro3-inicio {
-    background-image: url('../assets/carro-3.jpg');
+    background-image: url('../slide-inicio/carro3-inicio.jpeg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
+
+#carro4-inicio {
+    background-image: url('../slide-inicio/carro4-inicio.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro5-inicio {
+    background-image: url('../slide-inicio/carro5-inicio.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#carro6-inicio {
+    background-image: url('../slide-inicio/carro6-inicio.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /* ===================== FIM CARROS INICIO ===================== */
 
@@ -382,6 +415,7 @@ header nav.menu-desktop ul li {
     cursor: pointer;
     font-size: 18px;
 }
+
 .nav-buttons button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
@@ -389,9 +423,10 @@ header nav.menu-desktop ul li {
 /* ===================== MARCAS - INICIO ===================== */
 
 .marcas {
-    width: 70%;
-    height: 70px;
+    width: 100%;
+    height: 100px;
     margin-bottom: 100px;
+    background-color: #00ff6a;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -400,35 +435,19 @@ header nav.menu-desktop ul li {
 }
 
 .marca {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
+    width: 100px;
+    height: 100px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .marca img {
-    width: 90px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
 }
 
-#marca1 img {
-    margin-top: 10px;
-    width: 100px;
-    height: 40px;
-}
 
-#marca5 img {
-    width: 100px;
-    height: 60px;
-    margin-left: -20px;
-}
-
-#marca6 img {
-    width: 100px;
-    height: 60px;
-    margin-left: -20px;
-}
 
 /* ESTILO DO RODAPÉ */
 
@@ -535,28 +554,7 @@ button {
         display: none;
     }
 
-    .abrir-menu{
-        display: block;
-        margin-left: 250px;
-        z-index: 200;
-    }
-
-    .overlay-menu {
-        background-color: #00000096;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        display: none;
-    }
-
-    #modo-toggle {
-        position: relative;
-        top: -1px;
-        right: 70px;
-    }
+    
 
     #marca5 img {
         width: 100px;
@@ -625,107 +623,80 @@ button {
         width: 60%;
         margin-bottom: 100px;
     }
-}
 
-@media (max-width: 500px) {
-    .slider {
-        width: 350px;
-        height: 300px;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
-    footer {
-        margin-top: 300px;
-    }
-
-    #marca5 img {
-        width: 100px;
+    /*========================== */
+    .rfs-logo {
+        position: absolute;
+        width: 60px;
         height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
-    }
-
-    .topo-do-site {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        font-size: 20px;
-    }
-    
-    .topo-do-site .txt-topo-do-site p {
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-        margin-top: 120px;
-        margin-bottom: 150px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        text-align: justify;
-        padding: 40px;
-        width: 100%;
-        height: 400px;
-        border-bottom-left-radius: 50px;
-        border-top-right-radius: 50px;
-        line-height: 30px;
-    }
-
-    .menu-mobile #li-contato {
-        color: #00ff6a;
-    }
-
-    .menu-mobile nav ul li a:hover {
-        background-color: #00ff6a;
-        color: #000;
-        font-weight: bolder;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .menu-mobile #li-contato:hover {
-        color: #000000;
-        font-weight: bolder;
-    }
-
-    header a {
-        display: none;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header {
-        padding: 10px 2%;
-        background-color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header nav ul {
-        display: none;
+        border-radius: 8rem;
+        left: 15px;
+        top: 15px;
     }
 
     .abrir-menu{
         display: block;
-        margin-left: 250px;
+        z-index: 200;
+        position: absolute;
+        right: 0px;
     }
 
     #modo-toggle {
         position: relative;
-        top: -1px;
-        right: 70px;
+        top: auto;
+        right: 40px;
     }
 
+    .rfs-logo-footer {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 15px;
+        margin-bottom: 55px;
+    }
+
+    /*========================== */
+
+    .overlay-menu {
+        background-color: #00000096;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+    }
 }
 
+
 @media (min-width: 1380px) {
+
+    header {
+        padding: 10px 4%;
+        background-color: #000000;
+    }
+    
+    .rfs-logo-footer {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 430px;
+        margin-bottom: 55px;
+    }
+
+    .abrir-menu{
+        display: none;
+        margin-left: 250px;
+    }
+
+    #modo-toggle {
+        top: auto;
+        right: 50px;
+    }
+
     .slider {
         width: 650px;
         height: 600px;
@@ -738,9 +709,16 @@ button {
         margin-bottom: 100px;
     }
 
+    .slide-box {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        width: 80%;
+    }
+
     .marcas {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 90px;
@@ -749,17 +727,11 @@ button {
     footer {
         margin-top: 300px;
     }
-
-    header {
-        padding: 10px 4%;
-        background-color: #000000;
-    }
     
     header > .interface {
         display: flex;
         align-items: center;
         justify-content: center;
-        justify-content: space-between;
     }
     
     .interface h1 {
@@ -812,28 +784,6 @@ button {
         height: 3px;
         background-color: #00ff6a; /* Cor da linha */
         transition: 0.3s ease-in-out;
-    }
-
-    .abrir-menu{
-        display: none;
-        margin-left: 250px;
-    }
-
-    #modo-toggle {
-        top: auto;
-        right: 260px;
-    }
-
-    #marca5 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
     }
 
     .topo-do-site {

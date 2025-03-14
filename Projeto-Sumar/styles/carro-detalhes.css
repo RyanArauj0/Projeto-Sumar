@@ -46,6 +46,11 @@ body {
         box-shadow: 0px 0px 40px 10px #ffffff10;
     
     }
+
+    header {
+        padding: 10px 4%;
+        background-color: #1b1b1bd2;
+    }
 }
 
 /* Botão de alternância */
@@ -129,8 +134,10 @@ header > .interface {
     justify-content: space-between;
 }
 
-.interface h1 {
-    color: white;
+.interface .rfs-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8rem;
 }
 
 header a {
@@ -382,7 +389,7 @@ textarea {
 /* ===================== SLIDES - DETALHES ===================== */
 
 .slider {
-    width: 10%;
+    width: 50%;
     height: 600px;
     overflow: hidden;
     position: relative;
@@ -493,6 +500,48 @@ button {
 
 @media (max-width: 600px) {
 
+    /*========================== */
+    .interface .rfs-logo {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 15px;
+        top: 15px;
+    }
+
+    .rfs-logo-footer {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 15px;
+        margin-bottom: 55px;
+    }
+
+    .abrir-menu{
+        display: block;
+        z-index: 200;
+        position: absolute;
+        right: 0px;
+    }
+
+    #modo-toggle {
+        position: relative;
+        top: auto;
+        right: 40px;
+    }
+
+    .overlay-menu {
+        z-index: 100;
+    }
+
+    header {
+        margin-bottom: 100px;
+    }
+
+    /*========================== */
+
     footer {
         margin-top: 200px;
     }
@@ -510,27 +559,12 @@ button {
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    header {
-        padding: 10px 2%;
-        background-color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: -300px;
-    }
+    
 
     header nav ul {
         display: none;
     }
 
-    .abrir-menu{
-        display: block;
-        margin-left: 330px;
-    }
-
-    #modo-toggle {
-        position: relative;
-        top: auto;
-        right: 70px;
-    }
     
     .topo-do-site .txt-topo-do-site p {
         font-family: Arial, Helvetica, sans-serif;
@@ -577,39 +611,33 @@ button {
     #detalhes-carro {
         
         width: 100%;
-        height: 93.8%;
-    }
-  
-
-    /*========== POSICIONAR SLIDE E DESCRIÇÃO AQUI ==========*/
-    header {
-        padding: 10px 2%;
-        background-color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: -300px;
+        height: 63.8%;
+        margin-right: 0px;
     }
 
     .slider {
         width: 100%;
         height: 500px;
         overflow: hidden;
-        margin-bottom: -350px;
+        position: relative;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    /*========== AJUSTAR SLIDE E DESCRIÇÃO AQUI ==========*/
-
     
     .slider-content {
         display: flex;
         width: 100%;
         height: 400px;
+        margin-top: 80px;
         transition: transform 1s ease-in-out;
     }
     
     
     .slide-box {
         width: 100%;
-        height: 400px;
+        height: 300px;
     }
     
     input {
@@ -624,20 +652,36 @@ button {
         margin-bottom: 5px;
     }
 
+    
+}
+
+@media (max-width: 400px) {
     form {
-        width: 50%;
+        background-color: #64646431;
+        padding: 20px;
+        width: 200px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .desc {
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 200px;
+        height: 400px;
+        background-color: rgb(231, 229, 229);
+        color: #4D5C7B;
+        
     }
 }
 
-
 @media (min-width: 1380px) {
     footer {
-        width: 100%;
-        margin-top: 100px;
+        margin-top: 300px;
     }
 
     header {
@@ -759,20 +803,20 @@ button {
         justify-content: center;
         margin-top: 0px;
         width: 80%;
-        height: 600px;
+        height: 500px;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 250px;
     }
 
     .slider {
-        display: flex;
-        align-items: end;
-        justify-content: center;
-        width: 100%;
-        height: 383.2px;
+        width: 50%;
+        height: 500px;
         overflow: hidden;
         position: relative;
-        margin: 0px;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .slider-content {
@@ -784,6 +828,11 @@ button {
     .slide-box {
         width: 100%;
         height: 415px;
+    }
+    
+    .slide-box {
+        width: 100%;
+        
     }
     
     input {
@@ -808,11 +857,5 @@ button {
 
     #km {
         margin-top: -11px;
-    }
-
-    .desc {
-        
-        width: 70%;
-        height: auto;
     }
 }

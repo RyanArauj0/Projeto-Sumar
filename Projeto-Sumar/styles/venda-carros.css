@@ -30,6 +30,23 @@ body {
         box-shadow: 0px 0px 40px 10px #0e0d0d2f;
     
     }
+
+    .texto-topo {
+        background-color: #18181848;
+        width: 100%;
+    }
+    
+    .texto-topo p {
+        text-align: center;
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .venda  {
+        background-color: #18181848;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 100% 100%, 0% 100%, 0% 0%);
+    }
+
 }
 
 /* ===================== Modo escuro ===================== */
@@ -45,6 +62,11 @@ body {
         padding: 60px 4%;
         box-shadow: 0px 0px 40px 10px #ffffff10;
     
+    }
+
+    header {
+        padding: 10px 4%;
+        background-color: #1b1b1bd2;
     }
 }
 
@@ -129,8 +151,10 @@ header > .interface {
     justify-content: space-between;
 }
 
-.interface h1 {
-    color: white;
+.interface .rfs-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8rem;
 }
 
 header a {
@@ -274,7 +298,6 @@ header nav.menu-desktop ul li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
 }
 
 .horario p{
@@ -282,6 +305,11 @@ header nav.menu-desktop ul li {
     border-radius: 5px;
     width: 60%;
     padding: 5px;
+    
+}
+
+#header-ctt {
+    margin-bottom: 200px;
 }
 
 /* ===================== SLIDES - INICIO ===================== */
@@ -312,7 +340,7 @@ header nav.menu-desktop ul li {
 
 .texto-topo {
     display: flex;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 100px;
     width: 100%;
     justify-content: center;
@@ -322,9 +350,14 @@ header nav.menu-desktop ul li {
     font-family: sans-serif;
 }
 
+#texto-topo {
+    margin-top: -20px;
+}
+
 .texto-topo p {
     text-align: center;
     font-size: 20px;
+    
 }
 
 #venda-seu-carro {
@@ -479,28 +512,48 @@ button {
 .verde {
     color: #00ff6a;
 }
+
 /* ===================== RESPONSIVIDADE ===================== */
 
 @media (max-width: 600px) {
-    .slider {
-        width: 350px;
-        height: 300px;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
+
+    /*========================== */
+    .interface .rfs-logo {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 15px;
+        top: 15px;
     }
 
-    .marcas {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 90px;
+    .rfs-logo-footer {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 15px;
+        margin-bottom: 55px;
     }
+
+    .abrir-menu{
+        display: block;
+        z-index: 200;
+        position: absolute;
+        right: 0px;
+    }
+
+    #modo-toggle {
+        position: relative;
+        top: auto;
+        right: 40px;
+    }
+
+    .overlay-menu {
+        z-index: 100;
+    }
+
+    /*========================== */
 
     footer {
         margin-top: 300px;
@@ -516,29 +569,6 @@ button {
         padding: 10px 1%;
         background-color: #000000;
         font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .abrir-menu{
-        display: block;
-        margin-left: 250px;
-    }
-
-    #modo-toggle {
-        position: relative;
-        top: -2px;
-        right: 80px;
-    }
-
-    #marca5 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
     }
 
     .topo-do-site {
@@ -602,7 +632,7 @@ button {
         display: flex;
         margin-top: 200px;
         margin-bottom: 100px;
-        width: 100px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         
@@ -656,167 +686,6 @@ button {
     #km {
         margin-top: -11px;
     }
-}
-
-
-
-
-
-
-
-@media (max-width: 500px) {
-    .slider {
-        width: 350px;
-        height: 300px;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 100px;
-    }
-
-    footer {
-        margin-top: 300px;
-    }
-
-    #marca5 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
-    }
-
-    .topo-do-site {
-        width: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        font-size: 20px;
-    }
-    
-    .topo-do-site .txt-topo-do-site p {
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-        margin-top: 120px;
-        margin-bottom: 150px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        text-align: justify;
-        padding: 40px;
-        width: 100%;
-        height: 400px;
-        border-bottom-left-radius: 50px;
-        border-top-right-radius: 50px;
-        line-height: 30px;
-    }
-
-    .menu-mobile #li-contato {
-        color: #00ff6a;
-    }
-
-    .menu-mobile nav ul li a:hover {
-        background-color: #00ff6a;
-        color: #000;
-        font-weight: bolder;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .menu-mobile #li-contato:hover {
-        color: #000000;
-        font-weight: bolder;
-    }
-
-    header a {
-        display: none;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header {
-        padding: 10px 2%;
-        background-color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header nav ul {
-        display: none;
-    }
-
-    .abrir-menu{
-        display: block;
-        margin-left: 250px;
-    }
-
-    #modo-toggle {
-        position: relative;
-        top: -1px;
-        right: 70px;
-    }
-
-    .texto-topo {
-        display: flex;
-        margin-top: 0px;
-        margin-bottom: 100px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .texto-topo p {
-        text-align: center;
-        font-size: 20px;
-        line-height: 25px;
-    }
-    
-    #venda-seu-carro {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fdf6f605;
-        width: 100%;
-        height: 1000px;
-        margin: 0px 0px;
-        flex-direction: column;
-        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 100% 100%, 0% 100%, 0% 0%);
-    }
-    
-    .venda {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: 1000px;
-        clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
-    }
-    
-    form {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    input {
-        padding: 10px;
-        margin: 10px;
-        border-radius: 6px;
-        border: none;
-        outline: none;
-        
-    }
-
-    .horario {
-        margin-top: 100px;
-    }
-
 }
 
 @media (min-width: 1380px) {
