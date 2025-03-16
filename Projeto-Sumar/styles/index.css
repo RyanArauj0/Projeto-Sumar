@@ -544,13 +544,13 @@ button {
     }
 
     .marcas {
-    background-color: #fdf6f6d5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 0px;
+        background-color: #fdf6f6d5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 0px;
     }
 
     .marca {

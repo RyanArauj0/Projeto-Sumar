@@ -1,0 +1,337 @@
+<main>
+
+    <section class="filtro">
+        <label for="pesquisa">Pesquisar por nome:</label>
+        <input type="text" id="pesquisa" placeholder="Digite o nome do carro..." oninput="filtrarCarros()" autocomplete="off">
+
+        <label for="marca">Marca:</label>
+        <select id="marca">
+            <option value="">Todas</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="honda">Honda</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="jeep">Jeep</option>
+            <option value="mitsubishi">Mitsubishi</option>
+            <option value="peugeot">Peugeot</option>
+            <option value="renault">Renault</option>
+            <option value="volkswagen">Volkswagen</option>
+        </select>
+    
+        <label for="preco">Preço máximo:</label>
+        <input type="range" id="preco" min="16900" max="300000" step="1000" value="300000" oninput="atualizarPreco(this.value)">
+        <span id="preco-valor">R$ 300.000</span>
+        
+    </section>
+    
+    <section class="carros" id="lista-carros">
+
+        <!-- =============================================== Carro 1 ========================================================== -->
+
+        <div class="carro" data-marca="volkswagen" data-preco="66900" data-nome="Virtus 1.6 MSI">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro1/carro-1-amostra.jpeg" alt="Virtus 1.6 MSI">
+            <div class="nome">Virtus 1.6 MSI</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Manual</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2019</li><br>
+                    <li>Combustível:  Álcool / Gasolina</li><br>
+                    <li>Km: ---</li><br>
+                    <li>Marca: Volkswagen</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 66.900</div> <!-- Preço -->
+                
+                <a href="carro1/carro-1.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 2 ========================================================== -->
+
+        <div class="carro" data-marca="jeep" data-id="jeep" data-preco="109900" data-nome="jeepr">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro2/carro2-capa.jpeg" alt="jaguar">
+            <div class="nome">Renegade 1.3 turbo longitude</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2023</li><br>
+                    <li>Combustível:  Álcool / Gasolina</li><br>
+                    <li>Km: 44.500</li><br>
+                    <li>Marca: Jeep</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 109.900</div> <!-- Preço -->
+                
+                <a href="carro2/carro-2.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 3 ========================================================== -->
+
+        <div class="carro" data-marca="peugeot" data-id="Peugeot 208 Allure" data-preco="77900" data-nome="Peugeot 208 Allure">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro3/carro3-capa.jpeg" alt="Peugeot 208 Allure">
+            <div class="nome">Peugeot 208 Allure</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Manual</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2023</li><br>
+                    <li>Combustível: Álcool / Gasolina</li><br>
+                    <li>Km: 39.000</li><br>
+                    <li>Marca: Peugeot</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 77.900</div> <!-- Preço -->
+                
+                <a href="carro3/carro-3.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 4 ========================================================== -->
+
+        <div class="carro" data-marca="chevrolet" data-id="Onix plus LTZ" data-preco="100000" data-nome="Onix plus LTZ">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro4/carro4-capa.jpeg" alt="Onix plus LTZ">
+            <div class="nome">Onix plus LTZ</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Manual</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2023</li><br>
+                    <li>Combustível: Álcool / Gasolina</li><br>
+                    <li>Km: 27.800</li><br>
+                    <li>Marca: Chevrolet</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 85.900</div> <!-- Preço -->
+                
+                <a href="carro4/carro-4.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 5 ========================================================== -->
+
+        <div class="carro" data-marca="renault" data-id="Sandero Stepway Zen 1.6" data-preco="66900" data-nome="Sandero Stepway Zen 1.6">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro5/carro5-capa.jpeg" alt="FORD MUSTANG">
+            <div class="nome">Sandero Stepway Zen 1.6</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Manual</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2022</li><br>
+                    <li>Combustível: Álcool / Gasolina</li><br>
+                    <li>Km: ---</li><br>
+                    <li>Marca: Renault</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 66.900</div> <!-- Preço -->
+                
+                <a href="carro5/carro-5.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 6 ========================================================== -->
+
+        <div class="carro" data-marca="volkswagen" data-id="VW-Fusca" data-preco="16900" data-nome="VW Fusca">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img id="fusca" src="carro6/carro6-capa.png" alt="VW Fusca">
+            <div class="nome">VW Fusca</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Manual</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 1976</li><br>
+                    <li>Combustível: Gasolina</li><br>
+                    <li>Km: ---</li><br>
+                    <li>Marca: Volkswagen</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 16.900</div> <!-- Preço -->              
+                <a href="carro6/carro-6.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 7 ========================================================== -->
+
+        <div class="carro" data-marca="jeep" data-id="JEEP COMPASS 2.0 LIMITED" data-preco="93900" data-nome="JEEP COMPASS 2.0 LIMITED">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro7/carro7-capa.jpeg" alt="JEEP COMPASS 2.0 LIMITED">
+            <div class="nome">JEEP COMPASS 2.0 LIMITED</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2017</li><br>
+                    <li>Combustível: Álcool / Gasolina</li><br>
+                    <li>Km: 44.000</li><br>
+                    <li>Marca: Jeep</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 93.900</div> <!-- Preço -->              
+                <a href="carro7/carro-7.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 8 ========================================================== -->
+
+        <div class="carro" data-marca="mitsubishi" data-id="Mitsubishi Outlander V6" data-preco="300000" data-nome="Mitsubishi Outlander V6">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro8/carro8-capa.jpeg" alt="Mitsubishi Outlander V6">
+            <div class="nome">Mitsubishi Outlander V6</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: ---</li><br>
+                    <li>Combustível: Gasolina</li><br>
+                    <li>Km: ---</li><br>
+                    <li>Marca: Mitsubishi</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 68.900</div> <!-- Preço -->              
+                <a href="carro8/carro-8.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 9 ========================================================== -->
+
+        <div class="carro" data-marca="hyundai" data-id="Creta 22 Ultimeite" data-preco="136900" data-nome="Creta 22 Ultimeite">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro9/carro9-capa.jpeg" alt="Creta 22 Ultimeite">
+            <div class="nome">Creta 22 Ultimate</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: ---</li><br>
+                    <li>Combustível: Álcool / Gasolina</li><br>
+                    <li>Km: 75.300</li><br>
+                    <li>Marca: Hyundai</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 136.900</div> <!-- Preço -->              
+                <a href="carro9/carro-9.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 10 ========================================================== -->
+
+        <div class="carro" data-marca="volkswagen" data-id="Up move TSI" data-preco="48900" data-nome="Up move TSI">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img src="carro10/carro10-capa.jpeg" alt="Up move TSI">
+            <div class="nome">Up move TSI</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                    <li>Cambio: Automático</li><br>
+                    <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                    <li>Ano: 2016</li><br>
+                    <li>Combustível: Álcool / Gasolina</li><br>
+                    <li>Km: 80.500</li><br>
+                    <li>Marca: Volkswagen</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 48.900</div> <!-- Preço -->              
+                <a href="carro10/carro-10.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- ================================================================================================================== -->
+
+        <!-- =============================================== Carro 11 ========================================================== -->
+
+        <div class="carro" data-marca="chevrolet" data-id="Vectra Elegance 2.0" data-preco="27500" data-nome="Vectra Elegance 2.0">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img  id="CIVIC" src="carro11/carro11-capa.jpeg" alt="Vectra Elegance 2.0">
+            <div class="nome">Vectra Elegance 2.0</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                <li>Cambio: Automático</li><br>
+                <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                <li>Ano: 2006</li><br>
+                <li>Combustível: Álcool / Gasolina</li><br>
+                <li>Km: 218.000</li><br>
+                <li>Marca: Chevrolet</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 27.500</div> <!-- Preço -->              
+                <a href="carro11/carro-11.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- =================================================================================================================== -->
+
+        <!-- =============================================== Carro 12 ========================================================== -->
+
+        <div class="carro" data-marca="honda" data-id="Civic LXR 2.0" data-preco="81900" data-nome="Civic LXR 2.0">
+            <div class="aviso"><span>Em estoque</span></div> <!-- Estoque -->
+            <img id="Vectra" src="carro12/carro12-capa.jpeg" alt="VCivic LXR 2.0">
+            <div class="nome">Civic LXR 2.0</div> <!-- Nome de exibição -->
+
+            <div class="desc"> <!-- Descrição -->
+                <ul>
+                <li>Câmbio: Manual</li><br>
+                <li>Chave reserva: <span class="sim-nao">Sim</span></li><br> <!-- Chave reserva sim/nao -->
+                <li>Ano: 2024</li><br>
+                <li>Combustível: Álcool / Gasolina</li><br>
+                <li>Km: 138.500</li><br>
+                <li>Marca: Honda</li>
+                </ul>
+            </div>
+            <div class="saiba-mais">
+                <div class="btn-valor">R$ 81.900</div> <!-- Preço -->              
+                <a href="carro12/carro-12.html" target="" id="saiba-mais">SAIBA MAIS</a>
+            </div>
+        </div>
+
+        <!-- =================================================================================================================== -->
+
+    </section>
+
+    <!--Fim filtro-->
+    
+</main>
