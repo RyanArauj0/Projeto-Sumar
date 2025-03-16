@@ -688,10 +688,49 @@ button {
     }
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1200px) {
+
+    header {
+        padding: 10px 4%;
+        background-color: #000000;
+    }
+
+    /*========================== */
+    .rfs-logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 8rem;
+        left: 55px;
+        top: 15px;
+    }
+
+
+    #modo-toggle {
+        position: absolute;
+        top: auto;
+        right: 30px;
+    }
+
+    .rfs-logo-footer {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 55px;
+        margin-bottom: 55px;
+    }
+
+    .menu-desktop:last-child{
+        background-color: aqua;
+        margin-right: 100px;
+    }
+
+    /*========================== */
+
     .slider {
-        width: 350px;
-        height: 300px;
+        width: 650px;
+        height: 600px;
         overflow: hidden;
         position: relative;
         margin: auto;
@@ -701,9 +740,16 @@ button {
         margin-bottom: 100px;
     }
 
+    .slide-box {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        width: 80%;
+    }
+
     .marcas {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 90px;
@@ -712,17 +758,11 @@ button {
     footer {
         margin-top: 300px;
     }
-
-    header {
-        padding: 10px 4%;
-        background-color: #000000;
-    }
     
     header > .interface {
         display: flex;
         align-items: center;
         justify-content: center;
-        justify-content: space-between;
     }
     
     .interface h1 {
@@ -777,30 +817,8 @@ button {
         transition: 0.3s ease-in-out;
     }
 
-    .abrir-menu{
-        display: none;
-        margin-left: 250px;
-    }
-
-    #modo-toggle {
-        top: auto;
-        right: 260px;
-    }
-
-    #marca5 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
-    }
-
     .topo-do-site {
-        width: 10%;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: center; 

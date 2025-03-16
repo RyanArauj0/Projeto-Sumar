@@ -214,10 +214,10 @@ header nav.menu-desktop ul li {
 }
 
 #fusca {
-    margin-top: -150px;
+    margin-top: -100px;
     height: 380px;
     width: 100%;
-    clip-path: inset(150px 0 0 0);
+    clip-path: inset(100px 0 0 0);
 }
 
 #CIVIC, #Vectra {
@@ -632,12 +632,6 @@ i {
     top: 15px;
 }
 
-.abrir-menu{
-    display: block;
-    z-index: 200;
-    position: absolute;
-    right: 10px;
-}
 
 #modo-toggle {
     position: relative;
@@ -791,10 +785,50 @@ i {
 
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1200px) {
+
+    header {
+        padding: 10px 4%;
+        background-color: #000000;
+        margin-bottom: 100px;
+    }
+
+    /*========================== */
+    .rfs-logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 8rem;
+        left: 55px;
+        top: 15px;
+    }
+
+
+    #modo-toggle {
+        position: absolute;
+        top: auto;
+        right: 30px;
+    }
+
+    .rfs-logo-footer {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 8rem;
+        left: 55px;
+        margin-bottom: 55px;
+    }
+
+    .menu-desktop:last-child{
+        background-color: aqua;
+        margin-right: 100px;
+    }
+
+    /*========================== */
+
     .slider {
-        width: 350px;
-        height: 300px;
+        width: 650px;
+        height: 600px;
         overflow: hidden;
         position: relative;
         margin: auto;
@@ -804,9 +838,16 @@ i {
         margin-bottom: 100px;
     }
 
+    .slide-box {
+        width: 100%;
+    }
+
+    .nav-buttons {
+        width: 80%;
+    }
+
     .marcas {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: flex;
         justify-content: center;
         align-items: center;
         gap: 90px;
@@ -815,17 +856,11 @@ i {
     footer {
         margin-top: 300px;
     }
-
-    header {
-        padding: 10px 4%;
-        background-color: #000000;
-    }
     
     header > .interface {
         display: flex;
         align-items: center;
         justify-content: center;
-        justify-content: space-between;
     }
     
     .interface h1 {
@@ -880,30 +915,8 @@ i {
         transition: 0.3s ease-in-out;
     }
 
-    .abrir-menu{
-        display: none;
-        margin-left: 250px;
-    }
-
-    #modo-toggle {
-        top: auto;
-        right: 70px;
-    }
-
-    #marca5 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -9px;
-    }
-    
-    #marca6 img {
-        width: 100px;
-        height: 60px;
-        margin-left: -10px;
-    }
-
     .topo-do-site {
-        width: 10%;
+        width: 60%;
         display: flex;
         align-items: center;
         justify-content: center; 
@@ -1017,26 +1030,4 @@ i {
     #km {
         margin-top: -11px;
     }
-
-    .carros {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 90px;
-        justify-content: center;
-        width: 1200px;
-    }
-    
-    .carro {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-        height: 600px;
-        color: #4D5C7B;
-        font-weight: bolder;
-        background-color: whitesmoke;
-        border-radius: 3px;
-    }
-
-    
 }

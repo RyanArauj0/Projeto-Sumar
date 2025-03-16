@@ -1,68 +1,45 @@
 /*============================ CARRO 6 ===============================*/
 
 #carro1-inicio {
-    background-image: url('carro6-capa.jpeg');
+    background-image: url('carro6-capa.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carro2-inicio {
-    background-image: url('carro6-1.jpeg');
+    background-image: url('carro6-1.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carro3-inicio {
-    background-image: url('carro6-2.jpeg');
+    background-image: url('carro6-2.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carro4-inicio {
-    background-image: url('carro6-3.jpeg');
+    background-image: url('carro6-3.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carro5-inicio {
-    background-image: url('carro6-4.jpeg');
+    background-image: url('carro6-4.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 #carro6-inicio {
-    background-image: url('carro6-5.jpeg');
+    background-image: url('carro6-5.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 
-
-@media (max-width: 600px) {
-    #carro1-inicio {
-        margin-top: -150px;
-        height: 450px;
-        width: 100%;
-        clip-path: inset(150px 0 0 0);
-    }
-    
-    #carro2-inicio {
-        margin-top: -150px;
-        height: 450px;
-        width: 100%;
-        clip-path: inset(150px 0 0 0);
-    }
-    
-    #carro3-inicio {
-        margin-top: -150px;
-        height: 450px;
-        width: 100%;
-        clip-path: inset(150px 0 0 0);
-    }
-}
